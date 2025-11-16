@@ -3,9 +3,8 @@ using UnityEngine;
 public class MainMenuInitializer : MonoBehaviour
 {
 	[SerializeField] GameObject xrPlayer;
-	[SerializeField] Transform spawnPos; 
+	[SerializeField] Transform	spawnPos; 
 
-	
 	void Awake()
 	{
 		MainMenuState.InitializeMainMenu +=  InitializeMainMenu;
@@ -19,6 +18,7 @@ public class MainMenuInitializer : MonoBehaviour
 	void InitializeMainMenu()
 	{
 		Instantiate(xrPlayer, spawnPos.position , Quaternion.identity);
+		//Set data in UI
 		UiManager.instance.ToggleMainMenu();
 	}
 }

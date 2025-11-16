@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BootScene.unity
     guid: d06287e2e82df49e7bf77f8b3fa24509
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/TEst/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/Samples/XR Interaction Toolkit/3.2.2/Starter Assets/DemoScene.unity
@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 91c7b5e06ff8741b39d81211d0341b86
+  - enabled: 1
+    path: Assets/Scenes/Asylum.unity
+    guid: 0f285338271f745b49614a0493ff035d
+  - enabled: 1
+    path: Assets/Scenes/Catacombs.unity
+    guid: 93986de20d51544b18facd312d67afea
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5cf908b39b1934cff8903d132a4cce72, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
