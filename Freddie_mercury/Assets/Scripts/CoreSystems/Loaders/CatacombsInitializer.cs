@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AsylumInitializer : MonoBehaviour
+public class CatacombsInitializer : MonoBehaviour
 {
 	[SerializeField] GameObject xrPlayer;
 	[SerializeField] Transform	spawnPos; 
@@ -17,7 +17,7 @@ public class AsylumInitializer : MonoBehaviour
 
 	void InitializeLevel()
 	{
-		Debug.Log("ASylum level Initializer => Initalizing level");
+		Debug.Log("Catacombs level Initializer => Initalizing level");
 		Instantiate(xrPlayer, spawnPos.position , Quaternion.identity);
 	}
 }

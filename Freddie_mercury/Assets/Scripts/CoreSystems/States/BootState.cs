@@ -20,8 +20,7 @@ public class BootState : GameBaseState
 		AudioManager.instance.InitAudio();
 		SaveManager.instance.InitSave();
 
-        AsyncOperation op = SceneLoader.instance.LoadScene(1);
-        yield return op; 
+		yield return SceneLoader.instance.StartCoroutine(SceneLoader.instance.LoadSceneCoRoutine(1));
     }
 
 	public override IEnumerator QuitState(GameStateManager manager)

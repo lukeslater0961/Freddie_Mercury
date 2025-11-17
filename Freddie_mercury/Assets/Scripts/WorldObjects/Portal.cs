@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class Portal : MonoBehaviour
 {
 	private enum levelId{
@@ -7,9 +7,18 @@ public class Portal : MonoBehaviour
 		level2
 	};
 
-	[SerializeField] private LayerMask layerMask = 3;
+	[SerializeField]	private LayerMask	layerMask = 3;
+	[SerializeField]	private levelId		level;
 
-	[SerializeField]private levelId level;
+	[ContextMenu("load asylum")]
+	void LoadAsylum(){
+		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(2));	
+	}
+
+	[ContextMenu("load catacombs")]
+	void LoadCatacombs(){
+		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -17,10 +26,10 @@ public class Portal : MonoBehaviour
 		switch (level)
 		{
 			case levelId.level1:
-				SceneLoader.instance.LoadScene(3);
+				SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
 				break;
 			case levelId.level2:
-				SceneLoader.instance.LoadScene(2);
+				SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(2));	
 				break;
 			default:
 				Debug.Log("No levelId set");
