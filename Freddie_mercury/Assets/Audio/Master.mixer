@@ -39,7 +39,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GameSound
+  m_Name: Master
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -48,7 +48,11 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 72010cc0cb9fb499099039ff89330d3d
+    name: MusicVol
+  - guid: 9185f530c987b44afb14d7fb1835e75f
+    name: VFXVol
   m_AudioMixerGroupViews:
   - guids:
     - 550dd398307a74132926e9314854303e

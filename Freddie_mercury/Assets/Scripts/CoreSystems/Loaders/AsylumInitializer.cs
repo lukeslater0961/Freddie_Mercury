@@ -17,6 +17,6 @@ public class AsylumInitializer : MonoBehaviour
 
 	void InitializeLevel()
 	{
-		Debug.Log("ASylum level Initializer => initalizing level");
+		Debug.Log("ASylum level Initializer => Initalizing level");
 	}
 }

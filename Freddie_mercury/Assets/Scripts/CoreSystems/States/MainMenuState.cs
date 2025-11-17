@@ -12,4 +12,11 @@ public class MainMenuState : GameBaseState
 		InitializeMainMenu?.Invoke();
 		yield break;
 	}
+
+	public override IEnumerator QuitState(GameStateManager manager)
+	{
+		Debug.Log("Quitting Main menu state");
+		UiManager.instance.ToggleMainMenu();
+		yield break;
+	}
 }

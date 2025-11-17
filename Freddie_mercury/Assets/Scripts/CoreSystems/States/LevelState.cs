@@ -12,4 +12,9 @@ public class LevelState : GameBaseState
 		InitializeLevel?.Invoke();
 		yield break;
 	}
+
+	public override IEnumerator QuitState(GameStateManager manager)
+	{
+		yield break;
+	}
 }

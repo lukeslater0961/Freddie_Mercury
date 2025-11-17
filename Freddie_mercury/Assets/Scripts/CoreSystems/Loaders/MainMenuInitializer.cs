@@ -18,7 +18,8 @@ public class MainMenuInitializer : MonoBehaviour
 	void InitializeMainMenu()
 	{
 		Instantiate(xrPlayer, spawnPos.position , Quaternion.identity);
-		//Set data in UI
+		SaveManager.instance.LoadScores();
+		UiManager.instance.SetStatsBoard(SaveManager.instance.scores);
 		UiManager.instance.ToggleMainMenu();
 	}
 }

@@ -11,6 +11,8 @@ public class GameStateManager : Singleton<GameStateManager>
 
 	public void SwitchState(GameBaseState state)
 	{
+		if (currentState != null)
+			StartCoroutine(currentState.QuitState(this));
 		currentState = state;
 		StartCoroutine(currentState.EnterState(this));
 	}

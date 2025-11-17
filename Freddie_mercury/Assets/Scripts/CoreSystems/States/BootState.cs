@@ -13,12 +13,20 @@ public class BootState : GameBaseState
 
     private IEnumerator InitializeSystems(GameStateManager manager)
     {
-        Debug.Log("Boot: Calling SceneLoader");
+		Debug.Log("Boot: Initializing core systems");
 
 		//call all system init functions
 		UiManager.instance.InitUi();
+		AudioManager.instance.InitAudio();
+		SaveManager.instance.InitSave();
 
         AsyncOperation op = SceneLoader.instance.LoadScene(1);
         yield return op; 
     }
+
+	public override IEnumerator QuitState(GameStateManager manager)
+	{
+		Debug.Log("Quitting Boot State");
+		yield break;
+	}
 }

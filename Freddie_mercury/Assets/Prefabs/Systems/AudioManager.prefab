@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d6e15bc94dc4171aa1dd6d62255d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  masterMixer: {fileID: 24100000, guid: ca28821503089417f9d92605d9811bf5, type: 2}
+  defaultVolume: 0
