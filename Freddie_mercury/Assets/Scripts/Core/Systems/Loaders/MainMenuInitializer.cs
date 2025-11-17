@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class MainMenuInitializer : MonoBehaviour
 {
-	[SerializeField] GameObject xrPlayer;
-	[SerializeField] Transform	spawnPos; 
-
 	void Awake()
 	{
 		MainMenuState.InitializeMainMenu +=  InitializeMainMenu;
@@ -17,7 +14,7 @@ public class MainMenuInitializer : MonoBehaviour
 
 	void InitializeMainMenu()
 	{
-		Instantiate(xrPlayer, spawnPos.position , Quaternion.identity);
+		PlayerManager.instance.InstantiatePlayer();
 		SaveManager.instance.LoadScores();
 		UiManager.instance.SetStatsBoard(SaveManager.instance.scores);
 		UiManager.instance.ToggleMainMenu();
