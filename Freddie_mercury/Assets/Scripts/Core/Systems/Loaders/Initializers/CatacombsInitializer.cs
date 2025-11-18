@@ -1,30 +1,27 @@
 using UnityEngine;
 using System.Collections;
 
-public class AsylumInitializer : MonoBehaviour
+public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 {
 	[SerializeField]	private Transform			spawnPos;
 
 	void Awake()
 	{
-		LevelState.InitializeLevel +=  InitializeLevel;
+		LevelInitializerService.current = this;
 	}
 
-	void OnDestroy()
+	public IEnumerator InitializeLevel()
 	{
-		LevelState.InitializeLevel -=  InitializeLevel;
-	}
-
-	void InitializeLevel()
-	{
-		StartCoroutine(Initalizing());
+		Debug.Log("Catacombs level Initializer => Initalizing level");
+		yield return Initalizing();
 	}
 
 	private IEnumerator Initalizing(){
-		Debug.Log("ASylum level Initializer => Initalizing level");
 		PlayerManager.instance.DestroyInstance();
 		PlayerManager.instance.InstantiatePlayer(spawnPos);
-		yield return new WaitForSeconds(1);
+		//yield return new WaitForSeconds(1);
 		//UiManager.instance.StartTimerdw(); call this when game is ready
+		yield break;
 	}
+
 }

@@ -9,8 +9,8 @@ public class StopWatch : MonoBehaviour
 
 	[SerializeField]	TextMeshProUGUI	timeText;
 
-	private float currentTime;
-	private float  maxTime = 600f;
+	private float	currentTime;
+	private float	maxTime = 600f;
 
 	void Awake()
 	{
