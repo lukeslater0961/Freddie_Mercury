@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : Singleton<SceneLoader>
 {
+	public int currentScene;
+
 	public void LoadAndWait(int sceneIndex)
 	{
 		StartCoroutine(LoadSceneCoRoutine(sceneIndex));
@@ -12,6 +14,7 @@ public class SceneLoader : Singleton<SceneLoader>
     public AsyncOperation LoadScene(int sceneIndex)
     {
         Debug.Log($"SceneLoader => Loading scene {sceneIndex}");
+		currentScene = sceneIndex;
         return SceneManager.LoadSceneAsync(sceneIndex);
     }
 

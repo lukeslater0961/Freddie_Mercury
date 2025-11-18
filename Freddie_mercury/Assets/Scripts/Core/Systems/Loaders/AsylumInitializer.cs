@@ -1,9 +1,9 @@
 using UnityEngine;
+using System.Collections;
 
 public class AsylumInitializer : MonoBehaviour
 {
-	[SerializeField] GameObject xrPlayer;
-	[SerializeField] Transform	spawnPos; 
+	[SerializeField]	private Transform			spawnPos;
 
 	void Awake()
 	{
@@ -17,7 +17,14 @@ public class AsylumInitializer : MonoBehaviour
 
 	void InitializeLevel()
 	{
+		StartCoroutine(Initalizing());
+	}
+
+	private IEnumerator Initalizing(){
 		Debug.Log("ASylum level Initializer => Initalizing level");
-		Instantiate(xrPlayer, spawnPos.position , Quaternion.identity);
+		PlayerManager.instance.DestroyInstance();
+		PlayerManager.instance.InstantiatePlayer(spawnPos);
+		yield return new WaitForSeconds(1);
+		//UiManager.instance.StartTimerdw(); call this when game is ready
 	}
 }

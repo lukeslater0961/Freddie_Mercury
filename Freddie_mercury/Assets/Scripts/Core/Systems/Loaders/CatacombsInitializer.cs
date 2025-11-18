@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class CatacombsInitializer : MonoBehaviour
 {
-	[SerializeField] GameObject xrPlayer;
-	[SerializeField] Transform	spawnPos; 
+	[SerializeField] private Transform			spawnPos; 
 
 	void Awake()
 	{
@@ -18,6 +17,7 @@ public class CatacombsInitializer : MonoBehaviour
 	void InitializeLevel()
 	{
 		Debug.Log("Catacombs level Initializer => Initalizing level");
-		Instantiate(xrPlayer, spawnPos.position , Quaternion.identity);
+		PlayerManager.instance.DestroyInstance();
+		PlayerManager.instance.InstantiatePlayer(spawnPos);
 	}
 }

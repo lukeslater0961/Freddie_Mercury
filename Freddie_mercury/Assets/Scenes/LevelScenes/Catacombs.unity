@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1669122473521313309, guid: 31066932a85624bffbbca09245dc859b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1669122473521313309, guid: 31066932a85624bffbbca09245dc859b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -325,7 +325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c0976486007d4ae3bf6edf3af9bdfe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatacombsInitializer
-  xrPlayer: {fileID: 6369534799333842414, guid: ec5dc460c1a3743a8bc928bc7bf710d5, type: 3}
   spawnPos: {fileID: 1726360485}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -13420,6 +13420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613cc6211a1bf4e5e83637e947670785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuInitializer
+  spawnPos: {fileID: 1975249370}
 --- !u!1001 &1781923672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14770,6 +14771,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2836002745604871547, guid: aa258efdcf857e548a0e67bbf807043c, type: 3}
   m_PrefabInstance: {fileID: 767917998}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1975249369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975249370}
+  m_Layer: 0
+  m_Name: SpawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1975249370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975249369}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9996967, z: -0, w: -0.024627957}
+  m_LocalPosition: {x: -150.374, y: 0.624, z: 336.259}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7232225309378045255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1984232472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16041,12 +16073,20 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6451753697252885033, guid: 31066932a85624bffbbca09245dc859b, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6151859130592833521, guid: 31066932a85624bffbbca09245dc859b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975249370}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3616436251862853434, guid: 31066932a85624bffbbca09245dc859b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1766041640}
   m_SourcePrefab: {fileID: 100100000, guid: 31066932a85624bffbbca09245dc859b, type: 3}
+--- !u!4 &7232225309378045255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6151859130592833521, guid: 31066932a85624bffbbca09245dc859b, type: 3}
+  m_PrefabInstance: {fileID: 7232225309378045254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7366095802498984596
 PrefabInstance:
   m_ObjectHideFlags: 0
