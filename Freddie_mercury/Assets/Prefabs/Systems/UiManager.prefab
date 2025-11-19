@@ -306,6 +306,8 @@ MonoBehaviour:
   MainMenu: {fileID: 5828472828712412487}
   asylumScore: {fileID: 6811404282178864447}
   catacombsScore: {fileID: 4148084656415465286}
+  stopWatch: {fileID: 0}
+  watchScript: {fileID: 0}
 --- !u!1 &4298509062765278526
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +747,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -63.189972, y: 0, z: 33.883503, w: 25.496399}
+  m_margin: {x: -63.189972, y: 0, z: 16.359903, w: 25.496399}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1021,7 +1023,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -63.189972, y: 0, z: 33.883503, w: 25.496399}
+  m_margin: {x: -63.189972, y: 0, z: 21.288395, w: 25.496399}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

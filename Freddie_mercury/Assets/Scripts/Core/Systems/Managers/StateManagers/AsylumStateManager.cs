@@ -6,9 +6,9 @@ public class AsylumStateManager : MonoBehaviour
 	public static Asylum1State asylum1State = new Asylum1State();
 	public static Asylum2State asylum2State = new Asylum2State();
 	public static Asylum3State asylum3State = new Asylum3State();
-	private LevelBaseState currentState = null;
+	private LevelBaseState<AsylumStateManager> currentState = null;
 
-	public void SwitchState(LevelBaseState state)
+	public void SwitchState(LevelBaseState<AsylumStateManager> state)
 	{
 		currentState = state;
 		currentState.EnterState(this);

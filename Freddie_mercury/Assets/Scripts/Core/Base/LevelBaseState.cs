@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class LevelBaseState
+public abstract class LevelBaseState<TManager>
 {
-	public abstract void EnterState(AsylumStateManager manager);
+    public abstract void EnterState(TManager manager);
 }

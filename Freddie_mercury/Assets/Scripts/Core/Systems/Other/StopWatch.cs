@@ -5,11 +5,9 @@ using TMPro;
 
 public class StopWatch : MonoBehaviour
 {
-	public static event Action saveTime;
-
 	[SerializeField]	TextMeshProUGUI	timeText;
 
-	private float	currentTime;
+	public float	currentTime;
 	private float	maxTime = 600f;
 
 	void Awake()
@@ -28,6 +26,8 @@ public class StopWatch : MonoBehaviour
     {
 		if (SceneLoader.instance.currentScene == 1)
 			gameObject.SetActive(false);
+		if (FindAnyObjectByType<Exit>() != null)
+			Exit.OnLevelFinished += SaveTime;
 		currentTime = maxTime;
 		UiManager.instance.SetAndInitWatch(this.gameObject);
     }
@@ -39,18 +39,18 @@ public class StopWatch : MonoBehaviour
 
 	public void SetText()
 	{
-		timeText.text = $"{GetMinutes()}:{GetSeconds()}";
+		timeText.text = $"{GetMinutes(Mathf.FloorToInt(currentTime))}:{GetSeconds(Mathf.FloorToInt(currentTime))}";
 		Debug.Log($"time set to {timeText.text}");
 	}
 
-	int GetMinutes()
+	public int GetMinutes(int timeVal)
 	{
-		return Mathf.FloorToInt(currentTime / 60f);
+		return Mathf.FloorToInt(timeVal / 60f);
 	}
 
-	int GetSeconds()
+	public int GetSeconds(int timeVal)
 	{
-		return	Mathf.FloorToInt(currentTime % 60f);
+		return	Mathf.FloorToInt(timeVal % 60f);
 	}
 
 	private IEnumerator TimerSequence()
@@ -61,5 +61,14 @@ public class StopWatch : MonoBehaviour
 			timeText.text = $"{Mathf.FloorToInt(currentTime / 60)}:{Mathf.FloorToInt(currentTime % 60)}";
 			yield return null;
 		}
+	}
+
+	void SaveTime()
+	{
+		int totalTime = (int)maxTime - Mathf.FloorToInt(currentTime);
+		if (LevelInitializerService.current is CatacombsInitializer)
+			SaveManager.instance.SaveTimeValue(0, totalTime);
+		else if (LevelInitializerService.current is AsylumInitializer)
+			SaveManager.instance.SaveTimeValue(1, totalTime);
 	}
 }

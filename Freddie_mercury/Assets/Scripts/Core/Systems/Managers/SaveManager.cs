@@ -20,16 +20,35 @@ public class SaveManager : Singleton<SaveManager>
 		LoadScores();
 	}
 
+	public void SaveTimeValue(int level, int timeVal)
+	{
+		Debug.Log("SaveManager => saving time value");
+		switch(level)
+		{
+			case 0:
+				if (timeVal < scores[0] || scores[0] == 0)
+					PlayerPrefs.SetInt("CatacombsScore", timeVal);
+				break;
+			case 1:
+				if (timeVal < scores[1] || scores[0] == 0)
+					PlayerPrefs.SetInt("AsylumScore", timeVal);
+				break;
+		}
+		PlayerPrefs.Save();
+	}
+
 	public void LoadScores()
 	{
 		Debug.Log("SaveManager => Loading scores");
-		scores[0] = PlayerPrefs.GetInt("AsylumScore");
-		scores[1] = PlayerPrefs.GetInt("CatacombsScore");
+		scores[0] = PlayerPrefs.GetInt("CatacombsScore");
+		scores[1] = PlayerPrefs.GetInt("AsylumScore");
 	}
 	
 	public void ClearSave()
 	{
 		Debug.Log("SaveManager => Clearing save ...");
 		PlayerPrefs.DeleteAll();
+		InitScores();
+		UiManager.instance.SetStatsBoard(scores);
 	}
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Asylum1State : LevelBaseState
+public class Asylum1State : LevelBaseState<AsylumStateManager>
 {
 	AsylumStateManager _manager;
 

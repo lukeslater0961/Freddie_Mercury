@@ -18,6 +18,7 @@ public class AsylumInitializer : MonoBehaviour, ILevelInitializer
 		Debug.Log("Asylum level Initializer => Initalizing level");
 		yield return InstanceObjects();
 		stateManagerInstance.SwitchState(AsylumStateManager.asylum1State);
+
 		//enter level 1 state (room logic handle here)
 	}
 
