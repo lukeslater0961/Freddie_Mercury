@@ -17,7 +17,7 @@ public class SceneLoader : Singleton<SceneLoader>
 	{
 		yield return LoadSceneCoRoutine(1);
 
-		GameStateManager.instance.SwitchState(GameStateManager.MainMenuState);
+		GameStateManager.instance.SwitchState(GameStateManager.mainMenuState);
 	}
 
 	private AsyncOperation LoadScene(int sceneIndex)
