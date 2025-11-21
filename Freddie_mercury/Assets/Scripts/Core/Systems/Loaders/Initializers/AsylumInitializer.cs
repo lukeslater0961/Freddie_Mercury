@@ -4,8 +4,12 @@ using System.Collections;
 public class AsylumInitializer : MonoBehaviour, ILevelInitializer
 {
 	[SerializeField]	private Transform			spawnPos;
+
 	[SerializeField]	private AsylumStateManager	stateManagerPrefab;
 	[SerializeField]	private AsylumStateManager	stateManagerInstance;
+
+	[SerializeField]	private RoomManager			roomManagerPrefab;
+	[SerializeField]	private RoomManager			roomManagerInstance;
 
 	void Awake()
 	{
@@ -17,15 +21,19 @@ public class AsylumInitializer : MonoBehaviour, ILevelInitializer
 	{
 		Debug.Log("Asylum level Initializer => Initalizing level");
 		yield return InstanceObjects();
-		stateManagerInstance.SwitchState(AsylumStateManager.asylum1State);
 
 		//enter level 1 state (room logic handle here)
 	}
 
-	private IEnumerator InstanceObjects(){
+	private IEnumerator InstanceObjects()
+	{
 		stateManagerInstance = Instantiate(stateManagerPrefab);
+		roomManagerInstance = Instantiate(roomManagerPrefab);
+
 		PlayerManager.instance.DestroyInstance();
 		PlayerManager.instance.InstantiatePlayer(spawnPos);
+
+		stateManagerInstance.SwitchState(AsylumStateManager.asylum1State);
 		yield break;
 	}
 

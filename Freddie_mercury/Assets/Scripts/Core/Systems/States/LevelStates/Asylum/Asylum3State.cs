@@ -7,7 +7,7 @@ public class Asylum3State : LevelBaseState<AsylumStateManager>
 
     public override void EnterState(AsylumStateManager manager)
     {
-        Debug.Log("Entered Asylum2");
+        Debug.Log("Entered Asylum3");
 		_manager = manager;
     }
 }

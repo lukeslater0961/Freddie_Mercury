@@ -14,6 +14,7 @@ public class Asylum2State : LevelBaseState<AsylumStateManager>
 	public void QuitState()
 	{
 		Debug.Log("Leaving Asylum2");
+		_manager.RaiseRoomCompleted();
 		_manager.SwitchState(AsylumStateManager.asylum3State);
 	}
 }

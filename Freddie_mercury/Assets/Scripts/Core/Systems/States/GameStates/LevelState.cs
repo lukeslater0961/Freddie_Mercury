@@ -14,6 +14,7 @@ public class LevelState : GameBaseState
 
 	public override IEnumerator QuitState(GameStateManager manager)
 	{
+		Debug.Log("Quitting Level State");
 		yield break;
 	}
 }

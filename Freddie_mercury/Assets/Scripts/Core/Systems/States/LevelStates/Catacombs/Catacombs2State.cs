@@ -15,6 +15,7 @@ public class Catacombs2State : LevelBaseState<CatacombsStateManager>
 	public void QuitState()
 	{
 		Debug.Log("Leaving Catacombs3");
+		_manager.RaiseRoomCompleted();
 		_manager.SwitchState(CatacombsStateManager.catacombs3State);
 	}
 }
