@@ -9,6 +9,7 @@ public class Asylum1State : LevelBaseState<AsylumStateManager>
     {
         Debug.Log("Entered Asylum1");
 		_manager = manager;
+		UiManager.instance.StartTimerdw();
     }
 
 	public void QuitState()

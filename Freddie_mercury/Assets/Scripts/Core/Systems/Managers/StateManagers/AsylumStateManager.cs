@@ -4,6 +4,7 @@ using System;
 
 public class AsylumStateManager : MonoBehaviour 
 {
+	public static AsylumEntranceState asylumEntranceState = new AsylumEntranceState();
 	public static Asylum1State asylum1State = new Asylum1State();
 	public static Asylum2State asylum2State = new Asylum2State();
 	public static Asylum3State asylum3State = new Asylum3State();

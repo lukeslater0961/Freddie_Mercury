@@ -30,7 +30,7 @@ public class SaveManager : Singleton<SaveManager>
 					PlayerPrefs.SetInt("CatacombsScore", timeVal);
 				break;
 			case 1:
-				if (timeVal < scores[1] || scores[0] == 0)
+				if (timeVal < scores[1] || scores[1] == 0)
 					PlayerPrefs.SetInt("AsylumScore", timeVal);
 				break;
 		}

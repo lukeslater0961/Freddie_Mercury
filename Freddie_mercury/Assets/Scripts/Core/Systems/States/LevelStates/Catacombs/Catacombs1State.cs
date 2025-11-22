@@ -9,6 +9,7 @@ public class Catacombs1State : LevelBaseState<CatacombsStateManager>
     {
 		Debug.Log("Entering Catacombs1");
 		_manager = manager;
+		UiManager.instance.StartTimerdw();
     }
 
 	public void QuitState()

@@ -8,8 +8,8 @@ public class AsylumInitializer : MonoBehaviour, ILevelInitializer
 	[SerializeField]	private AsylumStateManager	stateManagerPrefab;
 	[SerializeField]	private AsylumStateManager	stateManagerInstance;
 
-	[SerializeField]	private RoomManager			roomManagerPrefab;
-	[SerializeField]	private RoomManager			roomManagerInstance;
+	[SerializeField]	private AsylumRoomManager			roomManagerPrefab;
+	[SerializeField]	private AsylumRoomManager			roomManagerInstance;
 
 	void Awake()
 	{
@@ -33,7 +33,7 @@ public class AsylumInitializer : MonoBehaviour, ILevelInitializer
 		PlayerManager.instance.DestroyInstance();
 		PlayerManager.instance.InstantiatePlayer(spawnPos);
 
-		stateManagerInstance.SwitchState(AsylumStateManager.asylum1State);
+		stateManagerInstance.SwitchState(AsylumStateManager.asylumEntranceState);
 		yield break;
 	}
 

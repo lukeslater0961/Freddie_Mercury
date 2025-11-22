@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-	[SerializeField]	Transform[] roomTransforms;
-	[SerializeField]	GameObject[] roomPrefabs;
+	[SerializeField] protected Transform[]	roomTransforms;
+	[SerializeField] protected	GameObject[] roomPrefabs;
 
 	private GameObject[] roomInstances;
 	private int			 currentRoom;
@@ -24,7 +24,7 @@ public class RoomManager : MonoBehaviour
 
 		InstantiateRooms();
 	}
-	
+
 	public void InstantiateRooms()
 	{
 		for (int i = 0; i < roomPrefabs.Length; i++)
@@ -41,7 +41,7 @@ public class RoomManager : MonoBehaviour
 		currentRoom += 1;
 		roomInstances[currentRoom].SetActive(true);
 	}
-	
+
 	public void HidePreviousRoom()
 	{
 		roomInstances[--currentRoom].SetActive(false);

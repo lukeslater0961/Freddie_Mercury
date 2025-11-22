@@ -4,8 +4,12 @@ using System.Collections;
 public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 {
 	[SerializeField]	private Transform			spawnPos;
+
 	[SerializeField]	private CatacombsStateManager	stateManagerPrefab;
 	[SerializeField]	private CatacombsStateManager	stateManagerInstance;
+
+	[SerializeField]	private CatacombsRoomManager			roomManagerPrefab;
+	[SerializeField]	private CatacombsRoomManager			roomManagerInstance;
 
 	void Awake()
 	{
@@ -17,14 +21,17 @@ public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 	{
 		Debug.Log("Catacombs level Initializer => Initalizing level");
 		yield return InstanceObjects();
-		stateManagerInstance.SwitchState(CatacombsStateManager.catacombs1State);
 		//enter level 1 state (room logic handle here)
 	}
 
 	private IEnumerator InstanceObjects(){
 		stateManagerInstance = Instantiate(stateManagerPrefab);
+		roomManagerInstance = Instantiate(roomManagerPrefab);
+
 		PlayerManager.instance.DestroyInstance();
 		PlayerManager.instance.InstantiatePlayer(spawnPos);
+
+		stateManagerInstance.SwitchState(CatacombsStateManager.catacombsEntranceState);
 		yield break;
 	}
 
