@@ -5,10 +5,18 @@ public class RoomManager : MonoBehaviour
 	[SerializeField] protected Transform[]	roomTransforms;
 	[SerializeField] protected	GameObject[] roomPrefabs;
 
-	private GameObject[] roomInstances;
+	[SerializeField]private GameObject[] roomInstances;
 	private int			 currentRoom;
 
 	void Awake(){Init();}
+
+	void OnDestroy()
+	{
+		if (LevelInitializerService.current is AsylumInitializer)
+			AsylumStateManager.OnRoomCompleted -= SetActiveRoom;
+		else if (LevelInitializerService.current is CatacombsInitializer)
+			CatacombsStateManager.OnRoomCompleted -= SetActiveRoom;
+	}
 
 	void Init()
 	{
@@ -37,7 +45,6 @@ public class RoomManager : MonoBehaviour
 
 	public void SetActiveRoom()
 	{
-		Debug.Log("RoomManager => Setting next room active");
 		currentRoom += 1;
 		roomInstances[currentRoom].SetActive(true);
 	}

@@ -15,9 +15,13 @@ public class SceneLoader : Singleton<SceneLoader>
 
 	public IEnumerator EnterMainMenu()
 	{
-		yield return LoadSceneCoRoutine(1);
+		if (currentScene != 1)
+		{
+			yield return LoadSceneCoRoutine(1);
 
-		GameStateManager.instance.SwitchState(GameStateManager.mainMenuState);
+			GameStateManager.instance.SwitchState(GameStateManager.mainMenuState);
+		}
+		yield break;
 	}
 
 	private AsyncOperation LoadScene(int sceneIndex)
