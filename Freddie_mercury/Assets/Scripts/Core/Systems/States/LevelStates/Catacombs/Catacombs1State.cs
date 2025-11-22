@@ -10,7 +10,14 @@ public class Catacombs1State : LevelBaseState<CatacombsStateManager>
 		Debug.Log("Entering Catacombs1");
 		_manager = manager;
 		UiManager.instance.StartTimerdw();
+		SubToEvents();
     }
+
+	void SubToEvents()
+	{
+		//subscribe to puzzle hander events
+		//one event will be all puzzles cleared kinda thing += QuitState
+	}
 
 	public void QuitState()
 	{

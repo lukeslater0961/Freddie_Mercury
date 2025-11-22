@@ -9,5 +9,5 @@ public class Catacombs3State : LevelBaseState<CatacombsStateManager>
     {
         Debug.Log("Entered Catacombs3");
 		_manager = manager;
-    }
+	}
 }
