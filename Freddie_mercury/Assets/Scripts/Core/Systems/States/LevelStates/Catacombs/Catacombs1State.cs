@@ -15,13 +15,26 @@ public class Catacombs1State : LevelBaseState<CatacombsStateManager>
 
 	void SubToEvents()
 	{
-		//subscribe to puzzle hander events
-		//one event will be all puzzles cleared kinda thing += QuitState
+		Room1PuzzleHandler.OnPuzzleFailed += ApplyPenalty;
+		Room1PuzzleHandler.OnAllPuzzlesCompleted += QuitState;
+	}
+
+	void UnSubToEvents()
+	{
+		Room1PuzzleHandler.OnPuzzleFailed -= ApplyPenalty;
+		Room1PuzzleHandler.OnAllPuzzlesCompleted -= QuitState;
+	}
+
+	public void ApplyPenalty()
+	{
+		_manager.eventHandler.ApplyTimerPenalty(_manager);
 	}
 
 	public void QuitState()
 	{
 		Debug.Log("Leaving Catacombs1");
+
+		UnSubToEvents();
 		_manager.RaiseRoomCompleted();
 		_manager.SwitchState(CatacombsStateManager.catacombs2State);
 	}

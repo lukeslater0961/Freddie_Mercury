@@ -11,7 +11,7 @@ public class CatacombsStateManager : RoomBaseStateManager
 
 	private LevelBaseState<CatacombsStateManager> currentState = null;
 
-	private EventHandler eventHandler;
+	public EventHandler eventHandler;
 
 	void Awake()
 	{
