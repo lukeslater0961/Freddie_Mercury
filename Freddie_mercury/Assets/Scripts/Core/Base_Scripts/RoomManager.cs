@@ -45,12 +45,16 @@ public class RoomManager : MonoBehaviour
 
 	public void SetActiveRoom()
 	{
+		Debug.Log($"SetActiveRoom called | currentRoom BEFORE increment: {currentRoom}");
 		currentRoom += 1;
+		Debug.Log($"currentRoom AFTER increment: {currentRoom}");
 		roomInstances[currentRoom].SetActive(true);
 	}
 
 	public void HidePreviousRoom()
 	{
-		roomInstances[--currentRoom].SetActive(false);
+		int previousRoom = currentRoom - 1;
+		if (previousRoom >= 0 && previousRoom < roomInstances.Length)
+			roomInstances[previousRoom].SetActive(false);	
 	}
 }

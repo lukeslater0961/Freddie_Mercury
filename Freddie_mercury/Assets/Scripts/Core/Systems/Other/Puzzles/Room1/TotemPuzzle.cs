@@ -24,6 +24,8 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
 	[ContextMenu("Completed Puzzle")]
     private void Complete()
     {
+		Debug.Log("TotemPuzzle => Completed");
+		Debug.Log("TotemPuzzle => listeners: " + (OnCompleted?.GetInvocationList()?.Length ?? 0));
         IsCompleted = true;
         OnCompleted?.Invoke();
     }

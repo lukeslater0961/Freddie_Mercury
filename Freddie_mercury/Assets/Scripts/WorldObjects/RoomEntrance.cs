@@ -1,8 +1,10 @@
 using UnityEngine;
+using System;
 
 public class RoomEntrance : MonoBehaviour
 {
 	private RoomManager roomManager;
+	public static event Action OnEntranceExited;
 
 	void Awake()
 	{
@@ -12,6 +14,7 @@ public class RoomEntrance : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		roomManager.HidePreviousRoom();
+		OnEntranceExited?.Invoke();
 		gameObject.SetActive(false);
 	}
 }

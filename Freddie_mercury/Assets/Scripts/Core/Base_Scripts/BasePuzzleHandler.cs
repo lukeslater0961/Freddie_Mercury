@@ -7,7 +7,7 @@ public abstract class BasePuzzleHandler : MonoBehaviour
     public static event Action OnAllPuzzlesCompleted;
     public static event Action OnPuzzleFailed;
 
-    protected List<IPuzzle> puzzles = new();
+    [SerializeField ]protected List<IPuzzle> puzzles = new();
 
     public virtual void Init()
     {
@@ -21,6 +21,7 @@ public abstract class BasePuzzleHandler : MonoBehaviour
     {
         foreach (var p in puzzles)
 		{
+			Debug.Log($"subscribing to events of {p}");
 			p.OnPuzzleFailed += HandlePuzzleFailed;
 			p.OnCompleted += HandlePuzzleCompleted;
 		}
@@ -28,6 +29,7 @@ public abstract class BasePuzzleHandler : MonoBehaviour
 
     protected virtual void HandlePuzzleCompleted()
     {
+		Debug.Log("Puzzle Handler => checking completed");
         if (AllPuzzlesSolved())
             OnAllPuzzlesCompleted?.Invoke();
     }
@@ -45,7 +47,10 @@ public abstract class BasePuzzleHandler : MonoBehaviour
     public virtual void Cleanup()
     {
         foreach (var p in puzzles)
-            p.OnCompleted -= HandlePuzzleCompleted;
+		{
+			p.OnPuzzleFailed -= HandlePuzzleFailed;
+			p.OnCompleted -= HandlePuzzleCompleted;
+		}
     }
 }
 
