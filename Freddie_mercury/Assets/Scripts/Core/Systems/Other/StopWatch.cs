@@ -69,12 +69,16 @@ public class StopWatch : MonoBehaviour
 
 	private IEnumerator TimerSequence()
 	{
-		while(currentTime > 0)
+		while (currentTime > 0)
 		{
-			currentTime -= Time.deltaTime;
-			timeText.text = $"{Mathf.FloorToInt(currentTime / 60)}:{Mathf.FloorToInt(currentTime % 60)}";
-			yield return null;
+			int minutes = (int)(currentTime / 60);
+			int seconds = (int)(currentTime % 60);
+
+			timeText.text = $"{minutes}:{seconds:00}";
+			yield return new WaitForSeconds(1f);
+			currentTime--;
 		}
+		timeText.text = "0:00";
 	}
 
 	void SaveTime()

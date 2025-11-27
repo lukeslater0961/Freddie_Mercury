@@ -361,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatacombsRoom1
       objectReference: {fileID: 0}
+    - target: {fileID: 5130748924933584185, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.74
+      objectReference: {fileID: 0}
     - target: {fileID: 8039394642483468854, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22

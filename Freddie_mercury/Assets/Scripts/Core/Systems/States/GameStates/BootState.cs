@@ -19,6 +19,7 @@ public class BootState : GameBaseState
 		UiManager.instance.InitUi();
 		AudioManager.instance.InitAudio();
 		SaveManager.instance.InitSave();
+		Application.targetFrameRate = 120;
 
 		yield return SceneLoader.instance.StartCoroutine(SceneLoader.instance.LoadSceneCoRoutine(1));
     }

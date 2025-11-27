@@ -14367,6 +14367,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatacombsLobbyEntrance
       objectReference: {fileID: 0}
+    - target: {fileID: 4683644403085966711, guid: d49cb16aab3884003b2555fdcc632ca2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683644403085966711, guid: d49cb16aab3884003b2555fdcc632ca2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683644403085966711, guid: d49cb16aab3884003b2555fdcc632ca2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.63
+      objectReference: {fileID: 0}
     - target: {fileID: 4870695204512171779, guid: d49cb16aab3884003b2555fdcc632ca2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
