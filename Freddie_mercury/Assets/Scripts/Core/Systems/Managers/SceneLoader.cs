@@ -20,7 +20,9 @@ public class SceneLoader : Singleton<SceneLoader>
 	public IEnumerator EnterMainMenu()
 	{
 		if (currentScene != 1)
-		{
+		{		
+			OnLoadScene?.Invoke();
+			yield return new WaitForSeconds(0.9f);
 			yield return LoadSceneCoRoutine(1);
 			GameStateManager.instance.SwitchState(GameStateManager.mainMenuState);
 		}
