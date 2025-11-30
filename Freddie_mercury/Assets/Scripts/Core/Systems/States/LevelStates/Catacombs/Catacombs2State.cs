@@ -14,14 +14,14 @@ public class Catacombs2State : LevelBaseState<CatacombsStateManager>
 
 	void SubToEvents()
 	{
-		Room1PuzzleHandler.OnPuzzleFailed += ApplyPenalty;
-		Room1PuzzleHandler.OnAllPuzzlesCompleted += QuitState;
+		Room2PuzzleHandler.OnPuzzleFailed += ApplyPenalty;
+		Room2PuzzleHandler.OnAllPuzzlesCompleted += QuitState;
 	}
 
 	void UnSubToEvents()
 	{
-		Room1PuzzleHandler.OnPuzzleFailed -= ApplyPenalty;
-		Room1PuzzleHandler.OnAllPuzzlesCompleted -= QuitState;
+		Room2PuzzleHandler.OnPuzzleFailed -= ApplyPenalty;
+		Room2PuzzleHandler.OnAllPuzzlesCompleted -= QuitState;
 	}
 
 	public void ApplyPenalty()

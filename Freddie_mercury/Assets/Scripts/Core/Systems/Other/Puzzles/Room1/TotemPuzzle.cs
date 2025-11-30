@@ -6,19 +6,49 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
     public event Action OnPuzzleFailed;
     public event Action OnCompleted;
 
+	private bool?[] slotAnswers = new bool?[4];
+
     public bool IsCompleted { get; private set; }
 
-	//function have objects linked to puzzle (totem positions) and answer array or something
+	void Start()
+	{
+		Slot.OnObjectPlaced += AddAnswer;
+	}
+
+	void OnDestroy()
+	{
+		Slot.OnObjectPlaced -= AddAnswer;
+	}
+
+	public void AddAnswer(bool val, int index)
+	{
+		 int findFirstNull = Array.FindIndex(slotAnswers, x => x == null);
+		 if (findFirstNull != -1)
+			 slotAnswers[index] = val;
+
+		 bool allFilled = Array.TrueForAll(slotAnswers, x => x.HasValue);
+		 if (allFilled)
+			 CheckAnswer();	
+	}
 
 	private void CheckAnswer()
 	{
-		//check answer array and array
-		//
-		//Invoke puzzle fail action to call reduce time in state
+		Debug.Log("Checking answers");
+		int firstTrueIndex = Array.FindIndex(slotAnswers, b => b == false);
+		if (firstTrueIndex != -1)
+			FailPuzzle();
+		else
+			Complete();
+	}
+
+	private void FailPuzzle()
+	{
+		Debug.Log("Puzzle failed, resetting answers");
+
+		for (int i = 0; i < slotAnswers.Length; i++)
+			slotAnswers[i] = null;
+
 		OnPuzzleFailed?.Invoke();
-		//
-		//call complete if array's match
-		Complete();
 	}
 
 	[ContextMenu("Completed Puzzle")]
@@ -26,7 +56,9 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
     {
 		Debug.Log("TotemPuzzle => Completed");
 		Debug.Log("TotemPuzzle => listeners: " + (OnCompleted?.GetInvocationList()?.Length ?? 0));
+
         IsCompleted = true;
+		Slot.OnObjectPlaced -= AddAnswer;
         OnCompleted?.Invoke();
     }
 }

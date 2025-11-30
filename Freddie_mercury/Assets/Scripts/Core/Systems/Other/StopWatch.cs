@@ -48,7 +48,7 @@ public class StopWatch : MonoBehaviour
 
 	public void SetText()
 	{
-		timeText.text = $"{GetMinutes(Mathf.FloorToInt(currentTime))}:{GetSeconds(Mathf.FloorToInt(currentTime))}";
+		timeText.text = $"{GetMinutes(Mathf.FloorToInt(currentTime))}:{GetSeconds(Mathf.FloorToInt(currentTime)):00}";
 		Debug.Log($"time set to {timeText.text}");
 	}
 

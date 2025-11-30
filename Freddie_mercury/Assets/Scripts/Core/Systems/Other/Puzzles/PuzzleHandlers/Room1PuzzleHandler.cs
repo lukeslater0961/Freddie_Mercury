@@ -18,7 +18,6 @@ public class Room1PuzzleHandler : BasePuzzleHandler
     protected override void RegisterPuzzles()
     {
 		Debug.Log("Room1PuzzleHandler => registering puzzles");
-		//move puzzles to array
         puzzles.Add(totemPuzzle);
     }
 }

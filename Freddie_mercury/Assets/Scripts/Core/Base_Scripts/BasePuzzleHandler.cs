@@ -31,7 +31,7 @@ public abstract class BasePuzzleHandler : MonoBehaviour
     {
 		Debug.Log("Puzzle Handler => checking completed");
         if (AllPuzzlesSolved())
-            OnAllPuzzlesCompleted?.Invoke();
+			OnAllPuzzlesCompleted?.Invoke();
     }
 
 	protected virtual void HandlePuzzleFailed()

@@ -16,7 +16,8 @@ public class RoomEntrance : MonoBehaviour
 	{
 		roomManager.HidePreviousRoom();
 		OnEntranceExited?.Invoke();
-		Door.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+		if (Door)
+			Door.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
 		gameObject.SetActive(false);
 	}
 }
