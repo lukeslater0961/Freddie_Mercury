@@ -10,13 +10,13 @@ public class CatacombsEntranceState : LevelBaseState<CatacombsStateManager>
 		Debug.Log("Entering Catacombs Entrance");
 		_manager = manager;
 		_manager.RaiseRoomCompleted();
-		RoomEntrance.OnEntranceExited += QuitState;
+		Room1Entrance.OnEntranceExited += QuitState;
     }
 
 	public void QuitState()
 	{
 		Debug.Log("Leaving Catacombs Entrance");
-		RoomEntrance.OnEntranceExited -= QuitState;
+		Room1Entrance.OnEntranceExited -= QuitState;
 		_manager.SwitchState(CatacombsStateManager.catacombs1State);
 	}
 }
