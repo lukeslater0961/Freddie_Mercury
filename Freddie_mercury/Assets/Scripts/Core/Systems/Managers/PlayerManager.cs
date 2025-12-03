@@ -16,5 +16,10 @@ public class PlayerManager : Singleton<PlayerManager>
 		Destroy(_playerInstance);
 		_playerInstance = null;
 	}
+
+	public void ResetPlayer(Transform newPos)
+	{
+		_playerInstance.transform.position = newPos.position;
+	}
 }
 

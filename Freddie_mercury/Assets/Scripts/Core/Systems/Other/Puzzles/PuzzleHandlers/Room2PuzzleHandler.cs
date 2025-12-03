@@ -2,23 +2,17 @@ using UnityEngine;
 
 public class Room2PuzzleHandler : BasePuzzleHandler
 {
-	//add puzzles
-    //[SerializeField] private TotemPuzzle totemPuzzle;
-
     private void Start()
     {
-		Init();
+		Room2Exit.OnRoomExited += RaisePuzzlesCompleted;
+		WrongExit.OnWrongExitTaken += HandlePuzzleFailed;
 	}
 
 	private void onDisable()
 	{
-		Cleanup();
+		Room2Exit.OnRoomExited -= RaisePuzzlesCompleted;
+		WrongExit.OnWrongExitTaken -= HandlePuzzleFailed;
 	}
 
-    protected override void RegisterPuzzles()
-    {
-		Debug.Log("Room2PuzzleHandler => registering puzzles");
-		//move puzzles to array
-        //puzzles.Add(totemPuzzle);
-    }
+    protected override void RegisterPuzzles(){}
 }

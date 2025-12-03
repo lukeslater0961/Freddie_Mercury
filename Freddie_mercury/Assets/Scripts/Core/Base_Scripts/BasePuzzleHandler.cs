@@ -34,6 +34,11 @@ public abstract class BasePuzzleHandler : MonoBehaviour
 			OnAllPuzzlesCompleted?.Invoke();
     }
 
+	protected virtual void RaisePuzzlesCompleted()
+	{
+		OnAllPuzzlesCompleted?.Invoke();
+	}
+
 	protected virtual void HandlePuzzleFailed()
 	{
 		OnPuzzleFailed?.Invoke();
