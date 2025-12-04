@@ -7,6 +7,9 @@ public class Room1Entrance : BaseRoomEntrance
 	public override void RoomEntered()
 	{
 		if (door)
+		{
 			door.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
+			gameObject.SetActive(false);
+		}
 	}
 }

@@ -256,23 +256,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.05, y: 180, z: 0}
---- !u!1 &907412338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8099308387579856989, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-  m_PrefabInstance: {fileID: 1612095819}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &907412339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907412338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce41b7d0f4d9f4dd48bdb7990cb41173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Room2Exit
 --- !u!1001 &1612095819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -323,74 +306,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2387386561620865084, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.07
+      value: -14.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3419732862822582611, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3419732862822582611, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429213360868717848, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429213360868717848, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.9
       objectReference: {fileID: 0}
     - target: {fileID: 4797591206377519116, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_Name
       value: CatacombsRoom2
       objectReference: {fileID: 0}
+    - target: {fileID: 4939976525497786289, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939976525497786289, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7671987203498270240, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.34
+      value: -16.060001
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8844247734583678319, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-    - {fileID: 7402354652095519917, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-    - {fileID: 2970299817097031339, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8099308387579856989, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 907412339}
-    - targetCorrespondingSourceObject: {fileID: 872828712259772752, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1612095823}
-    - targetCorrespondingSourceObject: {fileID: 8482243474834697950, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1612095822}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
---- !u!1 &1612095820 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8482243474834697950, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-  m_PrefabInstance: {fileID: 1612095819}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1612095821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 872828712259772752, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-  m_PrefabInstance: {fileID: 1612095819}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1612095822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612095820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2387ce0c11a64dc7bee8c05e0b9c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WrongExit
-  spawnPos: {fileID: 1612095824}
---- !u!114 &1612095823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612095821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2387ce0c11a64dc7bee8c05e0b9c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WrongExit
-  spawnPos: {fileID: 1612095824}
---- !u!4 &1612095824 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4814141606531652288, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-  m_PrefabInstance: {fileID: 1612095819}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1852113663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -476,10 +430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CatacombsRoom1
       objectReference: {fileID: 0}
-    - target: {fileID: 7990361359313819606, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 0.05
-      objectReference: {fileID: 0}
+    - target: {fileID: 4335802926949348266, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 4347062930766608985}
     - target: {fileID: 8039394642483468854, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -525,6 +479,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
+--- !u!82 &4347062930766608985 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3860784676446291855, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
+  m_PrefabInstance: {fileID: 4347062930766608984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

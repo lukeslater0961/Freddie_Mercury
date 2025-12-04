@@ -15,6 +15,7 @@ public abstract class BaseRoomEntrance : MonoBehaviour
 
 	protected virtual void OnTriggerEnter(Collider other)
 	{
+		Debug.Log($"room entrance triggered by {other.gameObject.name}");
 		RoomEntered();
 		roomManager.HidePreviousRoom();
 		OnEntranceExited?.Invoke();
