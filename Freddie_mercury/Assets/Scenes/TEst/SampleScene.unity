@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -249,13 +249,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411566026}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.99999994, z: -0.00043630067, w: 0}
-  m_LocalPosition: {x: 3.16, y: 0.33, z: -9.83}
+  m_LocalRotation: {x: -0.13461736, y: -0.47858712, z: 0.074557826, w: -0.8644499}
+  m_LocalPosition: {x: -6.4135323, y: 3.996417, z: -51.19555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0.05, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.266, y: 171.29, z: -0.004}
 --- !u!1001 &1612095819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,11 +306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4797591206377519116, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_Name
-      value: CatacombsRoom2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907626858373262769, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 8
+      value: Catacombs_Room2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -326,24 +322,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1607326014297668327, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.055
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607326014297668327, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.274
-      objectReference: {fileID: 0}
-    - target: {fileID: 1607326014297668327, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.058
       objectReference: {fileID: 0}
     - target: {fileID: 3112181039024647316, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
       propertyPath: m_Name
-      value: CatacombsEntrance
-      objectReference: {fileID: 0}
-    - target: {fileID: 3112181039024647316, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: Catacombs_Entrance
       objectReference: {fileID: 0}
     - target: {fileID: 3664383453342975714, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
       propertyPath: m_LocalPosition.x
@@ -355,7 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3664383453342975714, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.856
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3664383453342975714, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
       propertyPath: m_LocalRotation.w
@@ -400,16 +384,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960843886855835608, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_Name
-      value: CatacombsRoom1
+      value: Catacombs_Room1
       objectReference: {fileID: 0}
-    - target: {fileID: 3860784676446291855, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Volume
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335802926949348266, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: sound
-      value: 
-      objectReference: {fileID: 4347062930766608985}
     - target: {fileID: 8039394642483468854, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -455,11 +431,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
---- !u!82 &4347062930766608985 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3860784676446291855, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-  m_PrefabInstance: {fileID: 4347062930766608984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8898021159623627876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,9 +439,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1355887250282816303, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.89
+      objectReference: {fileID: 0}
     - target: {fileID: 1551658053427480309, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_Name
-      value: CatacombsRoom3
+      value: Catacombs_Room3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1930347021784806616, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133848343919591013, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2222368218285549472, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299634158270924057, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_Intensity
+      value: 3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448519955859364946, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980905232142035607, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50bc04e64eb8dc747a1c10e9da0fc80b, type: 2}
+    - target: {fileID: 3227814648564838880, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -25.890005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441080754980510944, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.960005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600541436301795600, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600541436301795600, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.69
       objectReference: {fileID: 0}
     - target: {fileID: 6121549502038034328, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -511,6 +526,14 @@ PrefabInstance:
     - target: {fileID: 6121549502038034328, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268655307632819785, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595573524741401208, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.6399999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
