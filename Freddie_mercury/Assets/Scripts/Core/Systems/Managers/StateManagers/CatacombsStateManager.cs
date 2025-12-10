@@ -20,6 +20,7 @@ public class CatacombsStateManager : RoomBaseStateManager
 
 	public void SwitchState(LevelBaseState<CatacombsStateManager> state)
 	{
+		Debug.Log($"switching state to {state}");
 		currentState = state;
 		currentState.EnterState(this);
 	}

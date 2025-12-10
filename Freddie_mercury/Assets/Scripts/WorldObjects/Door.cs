@@ -5,19 +5,15 @@ public class Door : MonoBehaviour
 	[SerializeField] Animator		animator;
 	[SerializeField] AudioSource	sound;
 
-    void Start()
+    void OnEnable()
     {
        BasePuzzleHandler.OnAllPuzzlesCompleted += OpenDoor;
     }
 
-    void OnDestroy()
-    {
-       BasePuzzleHandler.OnAllPuzzlesCompleted -= OpenDoor;
-    }
-
     void OpenDoor()
     {
-		Debug.Log("opening door");
+		BasePuzzleHandler.OnAllPuzzlesCompleted -= OpenDoor;
+		Debug.Log($"opening door {gameObject.name}");
 		sound.Play();
 		animator.SetTrigger("OpenDoor");
     }

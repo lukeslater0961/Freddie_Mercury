@@ -13,11 +13,6 @@ public class CameraShake : MonoBehaviour
 		BasePuzzleHandler.OnAllPuzzlesCompleted += DoCameraShake;
     }
 
-	void OnDestroy()
-	{
-		BasePuzzleHandler.OnAllPuzzlesCompleted -= DoCameraShake;
-	}
-
     void Update()
     {
         if (shakeDuration > 0)
@@ -34,6 +29,7 @@ public class CameraShake : MonoBehaviour
 
     public void DoCameraShake()
     {
+		BasePuzzleHandler.OnAllPuzzlesCompleted -= DoCameraShake;
         shakeDuration = 3f;
 		Debug.Log("Doing camera shake");
     }

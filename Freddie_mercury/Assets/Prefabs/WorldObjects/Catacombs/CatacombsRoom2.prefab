@@ -356,7 +356,6 @@ GameObject:
   - component: {fileID: 1639078371663995950}
   - component: {fileID: 7125567956142600434}
   - component: {fileID: 5724389719831198794}
-  - component: {fileID: 298610558029209198}
   m_Layer: 0
   m_Name: SM_Bld_Door_Tomb_01
   m_TagString: Untagged
@@ -457,19 +456,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3019952859593522841, guid: 852ba73627cec7f47bcb2667b1dce5bc, type: 2}
---- !u!114 &298610558029209198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905977494991233627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620e8be6e117e4912addad39baf00f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Door
-  animator: {fileID: 0}
 --- !u!1 &1865178139757640692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,8 +1811,10 @@ GameObject:
   - component: {fileID: 3382445578396879883}
   - component: {fileID: 5027710843931252763}
   - component: {fileID: 5574509135573627058}
+  - component: {fileID: 2395768137687931569}
+  - component: {fileID: 188480253512115251}
   m_Layer: 0
-  m_Name: SM_Bld_Door_Tomb_01
+  m_Name: Catacombs_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1937,7 +1925,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620e8be6e117e4912addad39baf00f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  animator: {fileID: 0}
+  animator: {fileID: 2395768137687931569}
+  sound: {fileID: 188480253512115251}
+--- !u!95 &2395768137687931569
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4122398795263612879}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0816b217bc4094fc084fc1c673b05c9d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &188480253512115251
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4122398795263612879}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1018142872004516497, guid: ca28821503089417f9d92605d9811bf5, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 9a3567204de0b4011b56648cb77a7fce, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4226849077781831995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3875,7 +3983,6 @@ GameObject:
   - component: {fileID: 2660932331743827587}
   - component: {fileID: 6744236323996697998}
   - component: {fileID: 938861612382329796}
-  - component: {fileID: 2085832307564288779}
   m_Layer: 0
   m_Name: SM_Bld_Door_Tomb_01
   m_TagString: Untagged
@@ -3976,19 +4083,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3019952859593522841, guid: 852ba73627cec7f47bcb2667b1dce5bc, type: 2}
---- !u!114 &2085832307564288779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7086807520868899132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620e8be6e117e4912addad39baf00f23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Door
-  animator: {fileID: 0}
 --- !u!1 &7147113362383976859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4500,7 +4594,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

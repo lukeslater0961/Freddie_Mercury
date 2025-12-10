@@ -37,6 +37,7 @@ public abstract class BasePuzzleHandler : MonoBehaviour
 	protected virtual void RaisePuzzlesCompleted()
 	{
 		OnAllPuzzlesCompleted?.Invoke();
+		Debug.Log("puzzles completed called => listeners: " + (OnAllPuzzlesCompleted?.GetInvocationList()?.Length ?? 0));
 	}
 
 	protected virtual void HandlePuzzleFailed()

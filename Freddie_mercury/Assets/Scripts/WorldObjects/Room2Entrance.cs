@@ -8,6 +8,9 @@ public class Room2Entrance : BaseRoomEntrance
 	public override void RoomEntered()
 	{
 		if (door)
-			door.SetActive(true);
+		{
+			door.SetActive(true); 
+			gameObject.SetActive(false);
+        }
 	}
 }

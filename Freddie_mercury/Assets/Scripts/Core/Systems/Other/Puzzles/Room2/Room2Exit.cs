@@ -7,6 +7,8 @@ public class Room2Exit : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+		Debug.Log($"Room exit triggered by {other.gameObject.name}");
         OnRoomExited?.Invoke();
+        gameObject.SetActive(false);
     } 
 }

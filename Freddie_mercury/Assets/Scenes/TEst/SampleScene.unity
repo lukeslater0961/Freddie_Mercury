@@ -304,41 +304,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2387386561620865084, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 3419732862822582611, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3419732862822582611, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4429213360868717848, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4429213360868717848, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.9
-      objectReference: {fileID: 0}
     - target: {fileID: 4797591206377519116, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_Name
       value: CatacombsRoom2
       objectReference: {fileID: 0}
-    - target: {fileID: 4939976525497786289, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4939976525497786289, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7671987203498270240, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -16.060001
+    - target: {fileID: 7907626858373262769, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -429,6 +401,10 @@ PrefabInstance:
     - target: {fileID: 960843886855835608, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_Name
       value: CatacombsRoom1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3860784676446291855, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4335802926949348266, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: sound
