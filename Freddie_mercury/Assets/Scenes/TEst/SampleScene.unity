@@ -304,9 +304,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4747045594863565020, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4797591206377519116, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_Name
       value: Catacombs_Room2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6373260144892731266, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635555267335952180, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_Convex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

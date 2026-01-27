@@ -12,4 +12,12 @@ public class WrongExit : MonoBehaviour
 		PlayerManager.instance.ResetPlayer(spawnPos);
 		OnWrongExitTaken?.Invoke();
 	}
+
+
+	[ContextMenu("wrong exit")]
+	void UseExit()
+	{
+		PlayerManager.instance.ResetPlayer(spawnPos);
+		OnWrongExitTaken?.Invoke();
+	}
 }
