@@ -13,12 +13,12 @@ public class Portal : MonoBehaviour
 	[ContextMenu("load asylum")]
 	void LoadAsylum(){
 		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(2));	
-	}
+	}//to be removed on clean
 
 	[ContextMenu("load catacombs")]
 	void LoadCatacombs(){
 		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
-	}
+	}//to be removed on clean
 
 	void OnTriggerEnter(Collider other)
 	{

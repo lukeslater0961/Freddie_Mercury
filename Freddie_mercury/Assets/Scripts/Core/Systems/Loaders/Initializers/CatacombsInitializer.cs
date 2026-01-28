@@ -15,6 +15,7 @@ public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 	{
 		LevelInitializerService.current = this;
 		Exit.OnLevelFinished += QuitLevel;
+		StopWatch.OnTimerZero += QuitLevel;
 	}
 
 	public IEnumerator InitializeLevel()
@@ -35,10 +36,11 @@ public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 		yield break;
 	}
 
-	void QuitLevel()
+	public void QuitLevel()
 	{
 		Debug.Log("Catacombs Initializer => quitting level");
 		Exit.OnLevelFinished -= QuitLevel;
+		StopWatch.OnTimerZero -= QuitLevel;
 		PlayerManager.instance.DestroyInstance();
 		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterMainMenu());
 	}

@@ -10,7 +10,7 @@ public class Exit : MonoBehaviour
 	{
 		Debug.Log("Exit => Going back to Menu");
 		OnLevelFinished?.Invoke();
-	}
+	}// To be removed on clean
 
 	void OnTriggerEnter(Collider other)
 	{

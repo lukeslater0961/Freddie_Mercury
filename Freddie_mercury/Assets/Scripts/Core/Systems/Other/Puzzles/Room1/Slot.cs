@@ -9,7 +9,7 @@ public class Slot : MonoBehaviour
 
     private PuzzleObject objectInTrigger;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         var obj = other.GetComponent<PuzzleObject>();
         if (obj != null)

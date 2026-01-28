@@ -51,7 +51,7 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
 		OnPuzzleFailed?.Invoke();
 	}
 
-	[ContextMenu("Completed Puzzle")]
+	[ContextMenu("Completed Puzzle")]//to be removed on clean
     private void Complete()
     {
 		Debug.Log("TotemPuzzle => Completed");

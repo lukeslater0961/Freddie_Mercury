@@ -5,10 +5,17 @@ using TMPro;
 
 public class StopWatch : MonoBehaviour
 {
+	public static Action OnTimerZero;
 	[SerializeField]	TextMeshProUGUI	timeText;
 
 	public float	currentTime;
 	private float	maxTime = 600f;
+
+	[ContextMenu ("end timer")]
+	void EndTimer()
+	{
+		OnTimerZero?.Invoke();
+	}//to be removed end of project
 
 	void Awake()
 	{
@@ -79,6 +86,8 @@ public class StopWatch : MonoBehaviour
 			currentTime--;
 		}
 		timeText.text = "0:00";
+		Debug.Log("GameOver");
+		OnTimerZero?.Invoke();
 	}
 
 	void SaveTime()
