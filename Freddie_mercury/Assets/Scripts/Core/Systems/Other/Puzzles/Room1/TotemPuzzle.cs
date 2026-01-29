@@ -46,7 +46,10 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
 		Debug.Log("Puzzle failed, resetting answers");
 
 		for (int i = 0; i < slotAnswers.Length; i++)
-			slotAnswers[i] = null;
+		{
+			if (slotAnswers[i] == false)
+				slotAnswers[i] = null;
+		}
 
 		OnPuzzleFailed?.Invoke();
 	}
