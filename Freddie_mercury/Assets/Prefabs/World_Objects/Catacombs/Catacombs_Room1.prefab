@@ -12157,8 +12157,9 @@ GameObject:
   - component: {fileID: 1468960129155168730}
   - component: {fileID: 3712721178550439184}
   - component: {fileID: 4219909077163759351}
-  - component: {fileID: 8065339577730912492}
   - component: {fileID: 929255713991595742}
+  - component: {fileID: 5641501384938344588}
+  - component: {fileID: 2779229038858995787}
   m_Layer: 0
   m_Name: SM_Prop_Sarcophagus_01
   m_TagString: Untagged
@@ -12174,14 +12175,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2920232847543250117}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5833377, y: -0.2729404, z: 0.2170459, w: 0.73356104}
-  m_LocalPosition: {x: 7.65, y: 1.81, z: -6.29}
+  m_LocalRotation: {x: 0.65084046, y: 0, z: 0, w: 0.7592146}
+  m_LocalPosition: {x: 4.07, y: 1.882, z: -6.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6389123170109361299}
   m_Father: {fileID: 8237031393196288421}
-  m_LocalEulerAnglesHint: {x: 76.984, y: -40.818, z: 0}
+  m_LocalEulerAnglesHint: {x: 81.21, y: 0, z: 0}
 --- !u!33 &1468960129155168730
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12260,90 +12261,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3944120796112901201, guid: 2bbdce2a5b8628e41b7b16eb512e9087, type: 2}
---- !u!114 &8065339577730912492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2920232847543250117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 1
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
 --- !u!114 &929255713991595742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12356,6 +12273,90 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c584e22dd72e4cff93f01b672299df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  lid: {fileID: 8940910597364398678}
+--- !u!114 &5641501384938344588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920232847543250117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0924bcaa9eb50df458a783ae0e2b59f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRPokeInteractor
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_Handedness: 0
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_PokeDepth: 0.1
+  m_PokeWidth: 0.0075
+  m_PokeSelectWidth: 0.015
+  m_PokeHoverRadius: 0.015
+  m_PokeInteractionOffset: 0.005
+  m_PhysicsLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_PhysicsTriggerInteraction: 1
+  m_UIDocumentTriggerInteraction: 1
+  m_RequirePokeFilter: 1
+  m_EnableUIInteraction: 1
+  m_ClickUIOnDown: 0
+  m_DebugVisualizationsEnabled: 0
+  m_UIHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_UIHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_EnableMultiPick: 0
+--- !u!54 &2779229038858995787
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920232847543250117}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2987231750580706813
 GameObject:
   m_ObjectHideFlags: 0
@@ -27668,8 +27669,8 @@ Transform:
   m_GameObject: {fileID: 5485694109909890493}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071089, z: -0, w: -0.7071047}
-  m_LocalPosition: {x: -0.02, y: 2.382, z: -1.5885401}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.02, y: 2.382, z: -1.66}
+  m_LocalScale: {x: 1.06, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7537733678048358301}
@@ -40031,7 +40032,7 @@ Rigidbody:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_CenterOfMass: {x: 0, y: 0.5, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -40040,7 +40041,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 1
@@ -41111,7 +41112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.009
+      value: 1.047
       objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41176,7 +41177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.134
+      value: -0.072
       objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41241,7 +41242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.692
+      value: -0.729
       objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalRotation.w

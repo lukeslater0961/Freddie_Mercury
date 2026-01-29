@@ -2,18 +2,19 @@
 
 ##THIS WEEK
 
--Setup level3 puzzles
-
 -Rework room1 totem puzzle => colour hints + maybe remove colour circles and replace with just plates/bowls
-	-added sarcophagus to have coloured beetles in it (needs interaction to open sarcophagus)
+	-added sarcophagus to have coloured beetles in it (needs interaction to open sarcophagus with animation or something)
+-Add extra random interactable items in the room1
 
+-Setup level3 puzzles
 
 ##LATER ON
 
+-Tutorial room + NPC
+
 -Brainstorm Room4 puzzle etc
 
--Tutorial room + NPC
+-Add info text area close to entrance for catacombs
 
 -Add Title Text with cool font/drawing
 
--Add info text area close to entrance for catacombs
