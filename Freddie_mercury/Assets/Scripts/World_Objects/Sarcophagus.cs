@@ -1,15 +1,19 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class Sarcophagus : Interactible
 {
 	[SerializeField]	Rigidbody	lid;
+	private				XRSimpleInteractable interactor;
 
+	void Start()
+	{
+		interactor = GetComponent<XRSimpleInteractable>();
+	}
 
-	[ContextMenu ("interact with Sarcophagus")]
 	public override void OnSelect()
 	{
-		Debug.Log("sarcophargus interacted with");
 		lid.isKinematic = false;
-		Debug.Log($"rb is kinematic {lid.isKinematic}");
+		interactor.enabled = false;
 	}
 }

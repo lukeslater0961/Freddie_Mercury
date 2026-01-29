@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_NearInteractionCaster: {fileID: 6121980860705460161}
   m_NearCasterSortingStrategy: 1
   m_SortNearTargetsAfterTargetFilter: 0
-  m_EnableFarCasting: 1
+  m_EnableFarCasting: 0
   m_FarInteractionCaster: {fileID: 1352152329510258652}
   m_FarAttachMode: 1
   m_EnableUIInteraction: 1
@@ -5571,7 +5571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2150280283882637977
 Transform:
   m_ObjectHideFlags: 0

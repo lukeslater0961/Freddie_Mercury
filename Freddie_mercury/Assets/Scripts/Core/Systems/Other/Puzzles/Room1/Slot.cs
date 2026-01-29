@@ -12,7 +12,7 @@ public class Slot : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         var obj = other.GetComponent<PuzzleObject>();
-        if (obj != null)
+        if (obj != null && !objectInTrigger)
         {
             objectInTrigger = obj;
 			SetObject(objectInTrigger);
