@@ -61,12 +61,12 @@ public class StopWatch : MonoBehaviour
 
 	public int GetMinutes(int timeVal)
 	{
-		return Mathf.FloorToInt(timeVal / 60f);
+		return Mathf.FloorToInt(timeVal / 60);
 	}
 
 	public int GetSeconds(int timeVal)
 	{
-		return	Mathf.FloorToInt(timeVal % 60f);
+		return	Mathf.FloorToInt(timeVal % 60);
 	}
 
 	void SetTimer(int penalty)
