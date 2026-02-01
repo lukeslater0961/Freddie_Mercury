@@ -3,13 +3,14 @@
 ##THIS WEEK
 
 -Setup level3 puzzles
+		-Make scripts for puzzle + finish lever (script + interaction)
+		-Structures come from ground for parkour to exit when puzzle finshed but door doesnt open (needs lever interaction)
 
--Brainstorm Room4 puzzle etc
+-Brainstorm Room4 => chaotic messy room with floating objects etc all over the place and effects everywhere
 
 ##LATER ON
 
 -Tutorial room + NPC
-
 
 -Add info text area close to entrance for catacombs
 
