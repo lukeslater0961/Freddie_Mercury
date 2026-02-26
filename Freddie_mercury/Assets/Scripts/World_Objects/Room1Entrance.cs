@@ -4,6 +4,7 @@ using System;
 public class Room1Entrance : BaseRoomEntrance
 {
 	[SerializeField] GameObject door;
+
 	public override void RoomEntered()
 	{
 		if (door)

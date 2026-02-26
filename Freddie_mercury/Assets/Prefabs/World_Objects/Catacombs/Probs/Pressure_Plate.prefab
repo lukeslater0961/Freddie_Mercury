@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 975294563282191805}
   - component: {fileID: 407381658027814707}
   - component: {fileID: 766868817214729641}
+  - component: {fileID: 2451067736020767866}
   m_Layer: 0
   m_Name: Pressure_Plate
   m_TagString: Untagged
@@ -266,6 +267,19 @@ MonoBehaviour:
   m_ClampToMaxDistance: 1
   m_MaxDistance: 0.12
   m_PokeFilter: {fileID: 407381658027814707}
+--- !u!114 &2451067736020767866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108638826275059488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c7b6d77eb99464cbeb2877071b2a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PressurePlate
+  id: 0
 --- !u!1 &7388736158109626968
 GameObject:
   m_ObjectHideFlags: 0
