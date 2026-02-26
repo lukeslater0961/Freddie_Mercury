@@ -10,10 +10,19 @@ public class PressurePlate : MonoBehaviour
 	private Transform	initialPosition;
 	private bool		isPressed = false;
 	
+	[ContextMenu("PressPlate")]
+	public void PressPlate()
+	{	
+		isPressed = true;
+		OnPressed?.Invoke(id);
+	}
+
 	void Start()
 	{
+		isPressed = false;
 		initialPosition = transform;
 		Room3PuzzleHandler.OnPuzzleFailed += Reset;
+		Room3PuzzleHandler.OnAllPuzzlesCompleted += Hide;
 	}
 
 	void Destroy()
@@ -23,7 +32,7 @@ public class PressurePlate : MonoBehaviour
 
 	void Update()
 	{
-		if (isPressed && (transform.position == initialPosition.position))
+		if (isPressed || (transform.position == initialPosition.position))
 			return;
 	
 		isPressed = true;
@@ -34,5 +43,10 @@ public class PressurePlate : MonoBehaviour
 	{
 		transform.position = Vector3.Lerp(transform.position, initialPosition.position, 1f);
 		isPressed = false;
+	}
+
+	void Hide()
+	{
+		gameObject.SetActive(false);
 	}
 }

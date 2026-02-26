@@ -15,6 +15,7 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 	{
 		index = 0;
 		PressurePlate.OnPressed += AddAnswer;
+		Debug.Log("answers length = " + answers.Length);
 	}
 
 	void OnDestroy()
@@ -25,12 +26,20 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 	public void AddAnswer(int id)
 	{
 		answers[index++] = id;
-		Debug.Log($"added {id} at index {index}");
+		Debug.Log($"added {id} at index {index - 1}");
+
+		if (index == answers.Length)
+			CheckAnswer();
 	}
 
 	private void CheckAnswer()
 	{
-		
+		for (int index = 0; index < answers.Length; index++)
+		{
+			if (answers[index] != index)
+				FailPuzzle();
+		}
+		Complete();
 	}
 
 	private void FailPuzzle()
