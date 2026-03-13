@@ -27,7 +27,8 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 	{
 		answers[index++] = id;
 		Debug.Log($"added {id} at index {index - 1}");
-
+		
+		Debug.Log($"checking index {index} compared to length {answers.Length}");
 		if (index == answers.Length)
 			CheckAnswer();
 	}
@@ -52,7 +53,24 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 
     private void Complete()
     {
+		Debug.Log("Puzzle completed");
 		PressurePlate.OnPressed -= AddAnswer;
+		IsCompleted = true;
 		OnCompleted?.Invoke();
+		DebugListeners();
     }
+
+	public void DebugListeners()
+	{
+		if (OnCompleted == null)
+		{
+			Console.WriteLine("No listeners");
+			return;
+		}
+
+		foreach (Delegate d in OnCompleted.GetInvocationList())
+		{
+			Console.WriteLine($"Target: {d.Target}, Method: {d.Method.Name}");
+		}
+	}
 }

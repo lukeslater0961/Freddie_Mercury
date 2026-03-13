@@ -7,6 +7,7 @@ public class Room3PuzzleHandler : BasePuzzleHandler
     private void Start()
     {
 		Lava.OnHit += HandlePuzzleFailed;
+		Init();
 	}
 
 	private void onDisable()

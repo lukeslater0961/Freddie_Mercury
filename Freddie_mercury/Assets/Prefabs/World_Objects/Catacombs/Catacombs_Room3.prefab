@@ -1067,9 +1067,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 654731037406910570}
-  - {fileID: 8332957040991390758}
   - {fileID: 6438760889062851871}
   - {fileID: 1232310866276645028}
+  - {fileID: 8332957040991390758}
   - {fileID: 681379498946529202}
   m_Father: {fileID: 6121549502038034328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2494,7 +2494,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4417743466162603369}
   - {fileID: 4948916405722614938}
   - {fileID: 3670845276910676993}
   - {fileID: 2348195059877220366}
@@ -2504,6 +2503,7 @@ Transform:
   - {fileID: 1886259348879430992}
   - {fileID: 7512040817827097661}
   - {fileID: 7244704347380511966}
+  - {fileID: 4417743466162603369}
   - {fileID: 5293547167522411801}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16877,6 +16877,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6121549502038034328}
     m_Modifications:
+    - target: {fileID: -2452818744639506721, guid: fc79254a2d36c41e483ef123eebae9e8, type: 3}
+      propertyPath: platePuzzle
+      value: 
+      objectReference: {fileID: 3584579013812135894}
     - target: {fileID: 2352692405258716458, guid: fc79254a2d36c41e483ef123eebae9e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18313,20 +18317,12 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3911486341580627005, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.20000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3911486341580627005, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.20000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3911486341580627005, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 3911486341580627005, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 3911486341580627005, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18364,13 +18360,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room3_Parkour
       objectReference: {fileID: 0}
+    - target: {fileID: 5449072032870845011, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 7956691500512893686}
     - target: {fileID: 8741079200457004848, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.144
-      objectReference: {fileID: 0}
-    - target: {fileID: 8812814338831997768, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.094
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18380,6 +18376,11 @@ PrefabInstance:
 --- !u!4 &681379498946529202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3911486341580627005, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
+  m_PrefabInstance: {fileID: 4556757792312368015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7956691500512893686 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5861157643362845049, guid: c33aa458a6fc24d8db5d169c1da98157, type: 3}
   m_PrefabInstance: {fileID: 4556757792312368015}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4728584134421679299
@@ -19206,14 +19207,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6108638826275059488, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7651117895706581172}
+      addedObject: {fileID: 2564352599152301527}
   m_SourcePrefab: {fileID: 100100000, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
 --- !u!1 &1755669844781815852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6108638826275059488, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
   m_PrefabInstance: {fileID: 5520105590902058764}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7651117895706581172
+--- !u!114 &2564352599152301527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20064,20 +20065,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anubis_Pressure_Plate
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2451067736020767866, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6108638826275059488, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3973263738630983469}
+      addedObject: {fileID: 2194168257713573845}
   m_SourcePrefab: {fileID: 100100000, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
 --- !u!1 &3648736763975897365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6108638826275059488, guid: eafcc61d87cb64041a64642e2fc913c7, type: 3}
   m_PrefabInstance: {fileID: 7378255617698932277}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3973263738630983469
+--- !u!114 &2194168257713573845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
