@@ -4,7 +4,7 @@ using System.Collections;
 public class Room3_Platforms : MonoBehaviour
 {
 	[SerializeField]	Transform targetTransform;
-	float speed	= 10f;
+	float speed	= 1f;
 	float step;
 
     void OnEnable()
@@ -22,14 +22,14 @@ public class Room3_Platforms : MonoBehaviour
 
 	IEnumerator RaisePlatforms()
 	{
-		while (Vector3.Distance(transform.position, targetTransform.position) > 0.01f)
+		while (Vector3.Distance(transform.position, targetTransform.position) > 0.1f)
 		{
 			float step = speed * Time.deltaTime;
 			transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, step);
 			yield return null;
 		}
 
-		transform.position = targetTransform.position;	
+		transform.position = targetTransform.position;
 	}
 }
 

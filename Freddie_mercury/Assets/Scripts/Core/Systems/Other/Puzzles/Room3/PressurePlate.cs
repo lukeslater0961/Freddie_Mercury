@@ -1,5 +1,8 @@
 using UnityEngine;
 using System;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PressurePlate : MonoBehaviour
 {
@@ -7,41 +10,37 @@ public class PressurePlate : MonoBehaviour
 
 	[SerializeField] private int id;
 
-	private Transform	initialPosition;
+	private Vector3	initialPosition;
 	private bool		isPressed = false;
-	
+	private XRSimpleInteractable pokeInteractable;
+
 	[ContextMenu("PressPlate")]
 	public void PressPlate()
 	{	
+		if (isPressed) return;
 		isPressed = true;
 		OnPressed?.Invoke(id);
 	}
 
 	void Start()
 	{
+		pokeInteractable = GetComponent<XRSimpleInteractable>();
+		Debug.Log($"{pokeInteractable}");
+		pokeInteractable.selectEntered.AddListener(HandlePress);
 		isPressed = false;
-		initialPosition = transform;
+		initialPosition = transform.position;
 		Room3PuzzleHandler.OnPuzzleFailed += Reset;
 		Room3PuzzleHandler.OnAllPuzzlesCompleted += Hide;
 	}
 
-	void Destroy()
+	void OnDestroy()
 	{
 		Room3PuzzleHandler.OnPuzzleFailed -= Reset;
 	}
 
-	void Update()
-	{
-		if (isPressed || (transform.position == initialPosition.position))
-			return;
-	
-		isPressed = true;
-		OnPressed?.Invoke(id);
-	}
-
 	void Reset()
 	{
-		transform.position = Vector3.Lerp(transform.position, initialPosition.position, 1f);
+		transform.position = Vector3.Lerp(transform.position, initialPosition, 1f);
 		isPressed = false;
 	}
 
