@@ -24,24 +24,13 @@ public class PressurePlate : MonoBehaviour
 
 	void Start()
 	{
-		pokeInteractable = GetComponent<XRSimpleInteractable>();
-		Debug.Log($"{pokeInteractable}");
-		pokeInteractable.selectEntered.AddListener(HandlePress);
 		isPressed = false;
-		initialPosition = transform.position;
-		Room3PuzzleHandler.OnPuzzleFailed += Reset;
 		Room3PuzzleHandler.OnAllPuzzlesCompleted += Hide;
 	}
 
 	void OnDestroy()
 	{
-		Room3PuzzleHandler.OnPuzzleFailed -= Reset;
-	}
-
-	void Reset()
-	{
-		transform.position = Vector3.Lerp(transform.position, initialPosition, 1f);
-		isPressed = false;
+		Room3PuzzleHandler.OnAllPuzzlesCompleted -= Hide;
 	}
 
 	void Hide()
