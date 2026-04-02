@@ -8,6 +8,7 @@ public class CatacombsStateManager : RoomBaseStateManager
 	public static Catacombs1State catacombs1State = new Catacombs1State();
 	public static Catacombs2State catacombs2State = new Catacombs2State();
 	public static Catacombs3State catacombs3State = new Catacombs3State();
+	public static Catacombs4State catacombs4State = new Catacombs4State();
 
 	private LevelBaseState<CatacombsStateManager> currentState = null;
 

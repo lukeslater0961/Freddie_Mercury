@@ -37,7 +37,6 @@ public class UiManager : Singleton<UiManager>
 		seconds = scores[1] % 60;
 		asylumScore.text = $"{minutes}:{seconds}mins";
 	}
-	//add options menu to quit and change volume
 	
 	public void SetAndInitWatch(GameObject watch)
 	{

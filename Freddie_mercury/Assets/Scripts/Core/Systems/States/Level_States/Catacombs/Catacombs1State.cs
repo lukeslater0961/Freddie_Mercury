@@ -33,7 +33,6 @@ public class Catacombs1State : LevelBaseState<CatacombsStateManager>
 	public void QuitState()
 	{
 		Debug.Log("Leaving Catacombs1");
-		//_manager.eventHandler.DoCameraShake(3);
 		UnSubToEvents();
 		_manager.RaiseRoomCompleted();
 		_manager.SwitchState(CatacombsStateManager.catacombs2State);
