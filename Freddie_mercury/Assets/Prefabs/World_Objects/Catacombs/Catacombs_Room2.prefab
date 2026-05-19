@@ -1962,7 +1962,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1018142872004516497, guid: ca28821503089417f9d92605d9811bf5, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 9a3567204de0b4011b56648cb77a7fce, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
@@ -4258,7 +4258,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 247
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0

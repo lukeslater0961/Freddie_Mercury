@@ -29,7 +29,7 @@ public class Portal : MonoBehaviour
 				SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
 				break;
 			case levelId.level2:
-				SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(2));	
+				SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
 				break;
 			default:
 				Debug.Log("No levelId set");

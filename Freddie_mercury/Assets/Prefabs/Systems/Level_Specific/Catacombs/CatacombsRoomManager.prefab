@@ -117,11 +117,13 @@ MonoBehaviour:
   - {fileID: 2991886342325423880}
   - {fileID: 8502627502487870321}
   - {fileID: 5348023967970447645}
+  - {fileID: 881511883510290342}
   roomPrefabs:
   - {fileID: 3112181039024647316, guid: 091b4e9219d9f4d7098fc61f7d198605, type: 3}
   - {fileID: 960843886855835608, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
   - {fileID: 4797591206377519116, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
   - {fileID: 1551658053427480309, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
+  - {fileID: 5455620697031073823, guid: cbd7c841e0eb94299af8ff1cbc7b9d87, type: 3}
   roomInstances: []
 --- !u!1 &5324910289130176210
 GameObject:
@@ -210,7 +212,7 @@ Transform:
   m_GameObject: {fileID: 7866366048564979938}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0011399984, y: 0, z: -20}
+  m_LocalPosition: {x: 6.9837003, y: 0.62182, z: -51.23974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
