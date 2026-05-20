@@ -6,13 +6,13 @@ public class Room3PuzzleHandler : BasePuzzleHandler
 
     private void Start()
     {
-		Lava.OnHit += HandlePuzzleFailed;
+		WorldLimits.OnHit += HandlePuzzleFailed;
 		Init();
 	}
 
 	private void onDisable()
 	{
-		Lava.OnHit -= HandlePuzzleFailed;
+		WorldLimits.OnHit -= HandlePuzzleFailed;
 	}
 
     protected override void RegisterPuzzles()

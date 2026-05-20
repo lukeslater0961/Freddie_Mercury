@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public class Lava : MonoBehaviour
+public class WorldLimits : MonoBehaviour
 {
 	public static event Action OnHit;
 	[SerializeField] Transform	spawnPos;

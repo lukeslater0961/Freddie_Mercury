@@ -4706,7 +4706,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 127
+    m_Bits: 264
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -13644,7 +13644,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 127
+    m_Bits: 264
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -20949,7 +20949,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 127
+    m_Bits: 264
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -22298,7 +22298,7 @@ GameObject:
   - component: {fileID: 8970963274683091630}
   - component: {fileID: 212009143286406827}
   - component: {fileID: 244953323301883005}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22314,7 +22314,7 @@ Transform:
   m_GameObject: {fileID: 4658655210121258991}
   serializedVersion: 2
   m_LocalRotation: {x: -0.10268577, y: -0.69961107, z: -0.10268577, w: 0.69961107}
-  m_LocalPosition: {x: 7.63, y: 1.259, z: -1.695}
+  m_LocalPosition: {x: 7.638, y: 1.257, z: -1.386}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22454,7 +22454,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -22870,7 +22870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6208853839705790959}
   - component: {fileID: 6151404202493491994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22911,8 +22911,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28075266, y: 0.11167836, z: 0.1783638}
-  m_Center: {x: -0.00078987866, y: 0.047820568, z: -0.108490355}
+  m_Size: {x: 0.28075266, y: 0.09423804, z: 0.1783638}
+  m_Center: {x: -0.00078987866, y: 0.03910041, z: -0.108490355}
 --- !u!1 &4939727478922597683
 GameObject:
   m_ObjectHideFlags: 0
@@ -30687,7 +30687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8796791558816586544}
   - component: {fileID: 648577619735650955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30728,8 +30728,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28075266, y: 0.11167836, z: 0.1783638}
-  m_Center: {x: -0.00078987866, y: 0.047820568, z: -0.108490355}
+  m_Size: {x: 0.28075266, y: 0.09369469, z: 0.1783638}
+  m_Center: {x: -0.00078987866, y: 0.03882873, z: -0.108490355}
 --- !u!1 &6313110656876353156
 GameObject:
   m_ObjectHideFlags: 0
@@ -30746,7 +30746,7 @@ GameObject:
   - component: {fileID: 9195645963877491500}
   - component: {fileID: 7360628158798083046}
   - component: {fileID: 6542870999243246466}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30902,7 +30902,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -33580,7 +33580,7 @@ GameObject:
   - component: {fileID: 2315027868841549441}
   - component: {fileID: 5327925202701439378}
   - component: {fileID: 2396146785001334053}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_01_Lid_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33806,7 +33806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3825770940959162320}
   - component: {fileID: 7556403423763208611}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33847,8 +33847,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28075266, y: 0.11167836, z: 0.1783638}
-  m_Center: {x: -0.00078987866, y: 0.047820568, z: -0.108490355}
+  m_Size: {x: 0.28075266, y: 0.10210562, z: 0.1783638}
+  m_Center: {x: -0.00078987866, y: 0.043034196, z: -0.108490355}
 --- !u!1 &7811569541600343633
 GameObject:
   m_ObjectHideFlags: 0
@@ -34638,7 +34638,7 @@ GameObject:
   - component: {fileID: 5815240340981573030}
   - component: {fileID: 600326592996957204}
   - component: {fileID: 8229507367802713966}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_02_Lid_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34748,7 +34748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1509740989537312129}
   - component: {fileID: 8394946711575364315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34789,8 +34789,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.28075266, y: 0.11167836, z: 0.1783638}
-  m_Center: {x: -0.00078987866, y: 0.047820568, z: -0.108490355}
+  m_Size: {x: 0.28075266, y: 0.08826947, z: 0.1783638}
+  m_Center: {x: -0.00078987866, y: 0.036116123, z: -0.108490355}
 --- !u!1 &8146063633323835354
 GameObject:
   m_ObjectHideFlags: 0
@@ -35344,7 +35344,7 @@ GameObject:
   - component: {fileID: 5795801043256744773}
   - component: {fileID: 268256782777955418}
   - component: {fileID: 4814886264643342954}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_03_Lid_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41170,7 +41170,7 @@ GameObject:
   - component: {fileID: 7870189690788304893}
   - component: {fileID: 434782523952598525}
   - component: {fileID: 86222994675886055}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_04_Lid_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41286,7 +41286,7 @@ GameObject:
   - component: {fileID: 1795301265981860490}
   - component: {fileID: 347251068744849588}
   - component: {fileID: 4945578810856477088}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41442,7 +41442,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -42183,7 +42183,7 @@ GameObject:
   - component: {fileID: 4677531997589725199}
   - component: {fileID: 5542954499533101678}
   - component: {fileID: 858041265655684784}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42339,7 +42339,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
@@ -42520,7 +42520,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 127
+    m_Bits: 264
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -43106,6 +43106,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3496315749265461385}
     m_Modifications:
+    - target: {fileID: 764431672979915886, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.133
@@ -43150,6 +43154,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_Box
       objectReference: {fileID: 0}
+    - target: {fileID: 6020213522631375387, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490790610421359976, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803769632995122783, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -43174,6 +43190,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3496315749265461385}
     m_Modifications:
+    - target: {fileID: 764431672979915886, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.133
@@ -43218,6 +43238,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue_Box
       objectReference: {fileID: 0}
+    - target: {fileID: 6020213522631375387, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490790610421359976, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803769632995122783, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -43242,6 +43274,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3496315749265461385}
     m_Modifications:
+    - target: {fileID: 764431672979915886, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.133
@@ -43285,6 +43321,18 @@ PrefabInstance:
     - target: {fileID: 5375201907994293060, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_Name
       value: Green_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020213522631375387, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490790610421359976, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803769632995122783, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43566,6 +43614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3496315749265461385}
     m_Modifications:
+    - target: {fileID: 764431672979915886, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4743237106874198526, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.133
@@ -43609,6 +43661,18 @@ PrefabInstance:
     - target: {fileID: 5375201907994293060, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
       propertyPath: m_Name
       value: Brown_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020213522631375387, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490790610421359976, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803769632995122783, guid: 5433b73503a864126b48a48ee3636eea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
