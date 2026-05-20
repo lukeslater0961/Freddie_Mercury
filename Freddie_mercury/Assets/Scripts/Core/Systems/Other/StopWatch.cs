@@ -11,12 +11,6 @@ public class StopWatch : MonoBehaviour
 	public float	currentTime;
 	private float	maxTime = 600f;
 
-	[ContextMenu ("end timer")]
-	void EndTimer()
-	{
-		OnTimerZero?.Invoke();
-	}//to be removed end of project
-
 	void Awake()
 	{
 		UiManager.InitTimer += SetText;
@@ -31,17 +25,14 @@ public class StopWatch : MonoBehaviour
 
     void Start()
     {
-		if (SceneLoader.instance.currentScene == 1)
-			gameObject.SetActive(false);
 		SubscribeToEvents();
 		currentTime = maxTime;
 		UiManager.instance.SetAndInitWatch(this.gameObject);
+		gameObject.SetActive(false);
     }
 
 	void SubscribeToEvents()
 	{
-		if (FindAnyObjectByType<Exit>() != null)
-			Exit.OnLevelFinished += SaveTime;
 		if (LevelInitializerService.current is AsylumInitializer)
 			AsylumStateManager.ReduceTime += SetTimer;
 		else if (LevelInitializerService.current is CatacombsInitializer)
@@ -51,6 +42,7 @@ public class StopWatch : MonoBehaviour
 	public void StartTimer()
 	{
 		StartCoroutine(TimerSequence());
+		Exit.OnLevelFinished += SaveTime;
 	}
 
 	public void SetText()
@@ -94,7 +86,10 @@ public class StopWatch : MonoBehaviour
 	{
 		int totalTime = (int)maxTime - Mathf.FloorToInt(currentTime);
 		if (LevelInitializerService.current is CatacombsInitializer)
+		{
+			Debug.Log("Saving time in catacombs");
 			SaveManager.instance.SaveTimeValue(0, totalTime);
+		}
 		else if (LevelInitializerService.current is AsylumInitializer)
 			SaveManager.instance.SaveTimeValue(1, totalTime);
 	}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class GameStateManager : Singleton<GameStateManager> 
 {
@@ -8,6 +9,13 @@ public class GameStateManager : Singleton<GameStateManager>
 	public static LevelState levelState	= new LevelState();
 
 	private GameBaseState currentState = null;
+
+	public static event Action InLevelState;
+
+	public void InvokeLevelState()
+	{
+		InLevelState?.Invoke();
+	}
 
 	public void SwitchState(GameBaseState state)
 	{

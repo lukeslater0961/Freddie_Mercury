@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 
 public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
@@ -22,7 +23,6 @@ public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 	{
 		Debug.Log("Catacombs level Initializer => Initalizing level");
 		yield return InstanceObjects();
-		//enter level 1 state (room logic handle here)
 	}
 
 	private IEnumerator InstanceObjects(){

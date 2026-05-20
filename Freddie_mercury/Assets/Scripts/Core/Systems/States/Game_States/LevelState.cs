@@ -8,6 +8,7 @@ public class LevelState : GameBaseState
 	public override IEnumerator EnterState(GameStateManager manager)
 	{
 		Debug.Log("Entered Level state");
+		manager.InvokeLevelState();
 		if (LevelInitializerService.current != null)
 			yield return LevelInitializerService.current.InitializeLevel();
 	}

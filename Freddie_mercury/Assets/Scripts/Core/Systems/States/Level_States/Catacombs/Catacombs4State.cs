@@ -18,9 +18,8 @@ public class Catacombs4State : LevelBaseState<CatacombsStateManager>
 
 	public void QuitState()
 	{
-		Debug.Log("Leaving Catacombs3");
+		Debug.Log("Leaving Catacombs4");
 		_manager.RaiseRoomCompleted();
-		//_manager.SwitchState(CatacombsStateManager.catacombs4State);
 	}
 
 }

@@ -34,7 +34,7 @@ public class Catacombs3State : LevelBaseState<CatacombsStateManager>
 		Debug.Log("Leaving Catacombs3");
 		UnSubToEvents();
 		_manager.RaiseRoomCompleted();
-		//_manager.SwitchState(CatacombsStateManager.catacombs4State);
+		_manager.SwitchState(CatacombsStateManager.catacombs4State);
 	}
 
 }
