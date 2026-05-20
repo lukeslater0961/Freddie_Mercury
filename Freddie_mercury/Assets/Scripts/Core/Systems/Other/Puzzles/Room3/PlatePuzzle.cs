@@ -57,20 +57,5 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 		PressurePlate.OnPressed -= AddAnswer;
 		IsCompleted = true;
 		OnCompleted?.Invoke();
-		DebugListeners();
     }
-
-	public void DebugListeners()
-	{
-		if (OnCompleted == null)
-		{
-			Console.WriteLine("No listeners");
-			return;
-		}
-
-		foreach (Delegate d in OnCompleted.GetInvocationList())
-		{
-			Console.WriteLine($"Target: {d.Target}, Method: {d.Method.Name}");
-		}
-	}
 }

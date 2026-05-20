@@ -24,8 +24,6 @@ public class Slot : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        //var obj = other.GetComponent<PuzzleObject>();
-        //if (obj != null && objectInTrigger == obj)
         objectInTrigger = null;
     }
 

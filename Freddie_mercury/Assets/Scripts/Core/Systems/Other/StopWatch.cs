@@ -33,10 +33,7 @@ public class StopWatch : MonoBehaviour
 
 	void SubscribeToEvents()
 	{
-		if (LevelInitializerService.current is AsylumInitializer)
-			AsylumStateManager.ReduceTime += SetTimer;
-		else if (LevelInitializerService.current is CatacombsInitializer)
-			CatacombsStateManager.ReduceTime += SetTimer;
+		CatacombsStateManager.ReduceTime += SetTimer;
 	}
 
 	public void StartTimer()
@@ -78,19 +75,12 @@ public class StopWatch : MonoBehaviour
 			currentTime--;
 		}
 		timeText.text = "0:00";
-		Debug.Log("GameOver");
 		OnTimerZero?.Invoke();
 	}
 
 	void SaveTime()
 	{
 		int totalTime = (int)maxTime - Mathf.FloorToInt(currentTime);
-		if (LevelInitializerService.current is CatacombsInitializer)
-		{
-			Debug.Log("Saving time in catacombs");
-			SaveManager.instance.SaveTimeValue(0, totalTime);
-		}
-		else if (LevelInitializerService.current is AsylumInitializer)
-			SaveManager.instance.SaveTimeValue(1, totalTime);
+		SaveManager.instance.SaveTimeValue(totalTime);
 	}
 }

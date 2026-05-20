@@ -6,7 +6,7 @@ public class SaveManager : Singleton<SaveManager>
 	
 	public void InitSave()
 	{
-		if (!PlayerPrefs.HasKey("AsylumScore"))
+		if (!PlayerPrefs.HasKey("CatacombsScore"))
 			InitScores();
 		else
 			LoadScores();
@@ -15,25 +15,17 @@ public class SaveManager : Singleton<SaveManager>
 	public void InitScores()
 	{
 		Debug.Log("SaveManager => Initializing scores");
-		PlayerPrefs.SetInt("AsylumScore", 0);
 		PlayerPrefs.SetInt("CatacombsScore", 0);
 		LoadScores();
 	}
 
-	public void SaveTimeValue(int level, int timeVal)
+	public void SaveTimeValue(int timeVal)
 	{
 		Debug.Log("SaveManager => saving time value");
-		switch(level)
-		{
-			case 0:
-				if (timeVal < scores[0] || scores[0] == 0)
-					PlayerPrefs.SetInt("CatacombsScore", timeVal);
-				break;
-			case 1:
-				if (timeVal < scores[1] || scores[1] == 0)
-					PlayerPrefs.SetInt("AsylumScore", timeVal);
-				break;
-		}
+
+		if (timeVal < scores[0] || scores[0] == 0)
+			PlayerPrefs.SetInt("CatacombsScore", timeVal);
+
 		PlayerPrefs.Save();
 	}
 
@@ -41,7 +33,6 @@ public class SaveManager : Singleton<SaveManager>
 	{
 		Debug.Log("SaveManager => Loading scores");
 		scores[0] = PlayerPrefs.GetInt("CatacombsScore");
-		scores[1] = PlayerPrefs.GetInt("AsylumScore");
 	}
 	
 	public void ClearSave()

@@ -10,7 +10,6 @@ public class UiManager : Singleton<UiManager>
 
 	[SerializeField]	GameObject					MainMenu;
 	
-	[SerializeField]	private TextMeshProUGUI 	asylumScore;
 	[SerializeField]	private TextMeshProUGUI		catacombsScore;
 	public						GameObject			stopWatch;
 	public						StopWatch			watchScript;
@@ -33,9 +32,6 @@ public class UiManager : Singleton<UiManager>
 		int minutes = scores[0] / 60;
 		int seconds = scores[0] % 60;
 		catacombsScore.text = $"{minutes}:{seconds}mins";
-		minutes = scores[1] / 60;
-		seconds = scores[1] % 60;
-		asylumScore.text = $"{minutes}:{seconds}mins";
 	}
 	
 	public void SetAndInitWatch(GameObject watch)

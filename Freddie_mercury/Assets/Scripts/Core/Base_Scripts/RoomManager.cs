@@ -12,10 +12,7 @@ public class RoomManager : MonoBehaviour
 
 	void OnDestroy()
 	{
-		if (LevelInitializerService.current is AsylumInitializer)
-			AsylumStateManager.OnRoomCompleted -= SetActiveRoom;
-		else if (LevelInitializerService.current is CatacombsInitializer)
-			CatacombsStateManager.OnRoomCompleted -= SetActiveRoom;
+		CatacombsStateManager.OnRoomCompleted -= SetActiveRoom;
 	}
 
 	void Init()
@@ -24,12 +21,7 @@ public class RoomManager : MonoBehaviour
 
 		currentRoom = 0;
 		roomInstances = new GameObject[roomPrefabs.Length];
-
-		if (LevelInitializerService.current is AsylumInitializer)
-			AsylumStateManager.OnRoomCompleted += SetActiveRoom;
-		else  if (LevelInitializerService.current is CatacombsInitializer)
-			CatacombsStateManager.OnRoomCompleted += SetActiveRoom;
-
+		CatacombsStateManager.OnRoomCompleted += SetActiveRoom;
 		InstantiateRooms();
 	}
 
