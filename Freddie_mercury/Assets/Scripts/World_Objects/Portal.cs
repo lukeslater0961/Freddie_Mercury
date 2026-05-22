@@ -7,12 +7,12 @@ public class Portal : MonoBehaviour
 
 	[ContextMenu("load catacombs")]
 	void LoadCatacombs(){
-		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
+		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(2));	
 	}//to be removed on clean
 
 	void OnTriggerEnter(Collider other)
 	{
 		if ((layerMask & (1 << other.gameObject.layer)) == 0) return;
-		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(3));	
+		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterLevel(2));	
 	}
 }
