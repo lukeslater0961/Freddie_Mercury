@@ -15,11 +15,10 @@ public class BootState : GameBaseState
     {
 		Debug.Log("Boot: Initializing core systems");
 
-		//call all system init functions
 		UiManager.instance.InitUi();
 		AudioManager.instance.InitAudio();
 		SaveManager.instance.InitSave();
-		Application.targetFrameRate = 120;
+		Application.targetFrameRate = 90;
 
 		yield return SceneLoader.instance.StartCoroutine(SceneLoader.instance.LoadSceneCoRoutine(1));
     }
