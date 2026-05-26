@@ -1,0 +1,2 @@
+timer bug
+puzzle1 bug on reset

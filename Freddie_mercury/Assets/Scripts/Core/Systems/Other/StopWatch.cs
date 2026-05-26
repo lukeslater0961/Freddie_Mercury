@@ -38,6 +38,7 @@ public class StopWatch : MonoBehaviour
 
 	public void StartTimer()
 	{
+		gameObject.SetActive(true);
 		StartCoroutine(TimerSequence());
 		Exit.OnLevelFinished += SaveTime;
 	}

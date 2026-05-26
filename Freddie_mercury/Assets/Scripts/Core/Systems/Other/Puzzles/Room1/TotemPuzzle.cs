@@ -18,6 +18,12 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
 	void OnDestroy()
 	{
 		Slot.OnObjectPlaced -= AddAnswer;
+
+		for (int i = 0; i < slotAnswers.Length; i++)
+		{
+			if (slotAnswers[i] == false)
+				slotAnswers[i] = null;
+		}
 	}
 
 	public void AddAnswer(bool val, int index)
