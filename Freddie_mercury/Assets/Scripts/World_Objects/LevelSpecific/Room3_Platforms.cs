@@ -12,6 +12,11 @@ public class Room3_Platforms : MonoBehaviour
        BasePuzzleHandler.OnAllPuzzlesCompleted += CallRaisePlatforms;
     }
 
+	void OnDisable()
+	{
+       BasePuzzleHandler.OnAllPuzzlesCompleted -= CallRaisePlatforms;
+	}
+
 	void CallRaisePlatforms()
 	{
 		Debug.Log("Raising platforms");

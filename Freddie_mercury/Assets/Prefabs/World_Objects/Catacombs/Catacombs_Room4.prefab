@@ -1317,6 +1317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4d7c90394cc440a8144c41c4220bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorldLimits
+  _playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
   spawnPos: {fileID: 4230730549652528863}
 --- !u!1 &1333929304501411367
 GameObject:
@@ -1737,7 +1740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4230730549652528863}
   m_Layer: 0
-  m_Name: SpawnPos
+  m_Name: PlayerSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

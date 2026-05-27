@@ -10,6 +10,11 @@ public class Door : MonoBehaviour
        BasePuzzleHandler.OnAllPuzzlesCompleted += OpenDoor;
     }
 
+	void OnDisable()
+	{
+		BasePuzzleHandler.OnAllPuzzlesCompleted -= OpenDoor;
+	}
+
     void OpenDoor()
     {
 		BasePuzzleHandler.OnAllPuzzlesCompleted -= OpenDoor;

@@ -15,5 +15,11 @@ public class InputManager : Singleton<InputManager>
 		if (menu.WasPressedThisFrame())//change to event
 			SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterMainMenu());
 	}
+
+	[ContextMenu("load mainmenu")]
+	void EnterMainMenu()
+	{
+		SceneLoader.instance.StartCoroutine(SceneLoader.instance.EnterMainMenu());
+	}
 }
 

@@ -21,6 +21,7 @@ public class StopWatch : MonoBehaviour
 	{
 		UiManager.InitTimer -= SetText;
 		UiManager.StartTimer -= StartTimer;
+		CatacombsStateManager.ReduceTime -= SetTimer;
 	}
 
     void Start()

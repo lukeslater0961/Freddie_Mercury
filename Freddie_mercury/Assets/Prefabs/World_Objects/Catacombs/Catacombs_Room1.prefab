@@ -1255,7 +1255,6 @@ GameObject:
   - component: {fileID: 4232382386689118821}
   - component: {fileID: 2114587439638603439}
   - component: {fileID: 1254981156065942930}
-  - component: {fileID: 7228229514857764052}
   m_Layer: 0
   m_Name: SM_Prop_Organ_Brain_01
   m_TagString: Untagged
@@ -1356,33 +1355,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3811440607666823522, guid: 833b2ee2fa6b3cb49a4804197313e8a6, type: 2}
---- !u!54 &7228229514857764052
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457249925995349882}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &465600153680937661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3140,6 +3112,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2938581740332742525}
   - {fileID: 3009118899682695734}
   - {fileID: 2350946623855272944}
   - {fileID: 6006075111261295273}
@@ -3888,7 +3861,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b54ef7923e4444c35b54ba7a4111cb67, type: 2}
+  - {fileID: 2100000, guid: 1ef3d593786a84c4dbc71903aa1cfcfa, type: 2}
   - {fileID: 2100000, guid: 0083aa652d382cc45b384c0f2c4a1468, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -7619,6 +7592,7 @@ GameObject:
   - component: {fileID: 7117673615930481338}
   - component: {fileID: 8407856791467051463}
   - component: {fileID: 268039620095952552}
+  - component: {fileID: 7646656943685293584}
   m_Layer: 0
   m_Name: SM_Prop_Pillow_01
   m_TagString: Untagged
@@ -7896,6 +7870,19 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &7646656943685293584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2763323761807924470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2856300621489276745
 GameObject:
   m_ObjectHideFlags: 0
@@ -20848,6 +20835,7 @@ GameObject:
   - component: {fileID: 4540145384921947698}
   - component: {fileID: 6818386100608736941}
   - component: {fileID: 8029738753547605463}
+  - component: {fileID: 8296184659361821125}
   m_Layer: 0
   m_Name: SM_Prop_Pillow_01 (1)
   m_TagString: Untagged
@@ -21125,6 +21113,19 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &8296184659361821125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4021623418540894022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4235350421867442478
 GameObject:
   m_ObjectHideFlags: 0
@@ -22631,6 +22632,7 @@ GameObject:
   - component: {fileID: 8970963274683091630}
   - component: {fileID: 212009143286406827}
   - component: {fileID: 244953323301883005}
+  - component: {fileID: 3282128243282498543}
   m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_03
   m_TagString: Untagged
@@ -22759,7 +22761,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &8970963274683091630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22923,6 +22925,19 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &3282128243282498543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658655210121258991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4738007319045322701
 GameObject:
   m_ObjectHideFlags: 0
@@ -30013,6 +30028,7 @@ GameObject:
   - component: {fileID: 8034519991884471673}
   - component: {fileID: 8821730556643623941}
   - component: {fileID: 3541157521036983329}
+  - component: {fileID: 4559447307749568727}
   m_Layer: 0
   m_Name: SM_Prop_Crook_01
   m_TagString: Untagged
@@ -30290,6 +30306,19 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &4559447307749568727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5706826183938085557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5790134551530560482
 GameObject:
   m_ObjectHideFlags: 0
@@ -30628,6 +30657,76 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2190809748014544226, guid: 8b73b57c6354adb4b962d4588d5dd3f1, type: 3}
+--- !u!1 &6064441256915401162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2938581740332742525}
+  - component: {fileID: 3682056610564775887}
+  - component: {fileID: 4999955739596814683}
+  m_Layer: 0
+  m_Name: WorldLimit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2938581740332742525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064441256915401162}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8039394642483468854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3682056610564775887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064441256915401162}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 0.48072264, z: 30}
+  m_Center: {x: 0, y: -0.2596387, z: 0}
+--- !u!114 &4999955739596814683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064441256915401162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4d7c90394cc440a8144c41c4220bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldLimits
+  _playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  spawnPos: {fileID: 0}
 --- !u!1 &6092998578722326235
 GameObject:
   m_ObjectHideFlags: 0
@@ -31080,6 +31179,7 @@ GameObject:
   - component: {fileID: 9195645963877491500}
   - component: {fileID: 7360628158798083046}
   - component: {fileID: 6542870999243246466}
+  - component: {fileID: 2160619163001993027}
   m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_04
   m_TagString: Untagged
@@ -31208,7 +31308,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &9195645963877491500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31372,6 +31472,19 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &2160619163001993027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6313110656876353156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &6366528072772794450
 GameObject:
   m_ObjectHideFlags: 0
@@ -32156,7 +32269,6 @@ GameObject:
   - component: {fileID: 6663794982264931899}
   - component: {fileID: 8907690648081953521}
   - component: {fileID: 6980198881884045216}
-  - component: {fileID: 624323233651336960}
   m_Layer: 0
   m_Name: SM_Prop_Organ_Guts_01
   m_TagString: Untagged
@@ -32173,7 +32285,7 @@ Transform:
   m_GameObject: {fileID: 6962148322854425380}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2938, y: 0.087, z: -2.4689007}
+  m_LocalPosition: {x: 0.2938, y: 0.092, z: -2.4689007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32257,33 +32369,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6415083199014494683, guid: 0f701d58ad2a635449e0e68b459e670d, type: 2}
---- !u!54 &624323233651336960
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6962148322854425380}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &6985756756456926900
 GameObject:
   m_ObjectHideFlags: 0
@@ -41732,6 +41817,7 @@ GameObject:
   - component: {fileID: 1795301265981860490}
   - component: {fileID: 347251068744849588}
   - component: {fileID: 4945578810856477088}
+  - component: {fileID: 7125049025746715835}
   m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_01
   m_TagString: Untagged
@@ -41860,7 +41946,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1795301265981860490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42024,6 +42110,19 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &7125049025746715835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787338067536955376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &8816417413645428220
 GameObject:
   m_ObjectHideFlags: 0
@@ -42630,6 +42729,7 @@ GameObject:
   - component: {fileID: 4677531997589725199}
   - component: {fileID: 5542954499533101678}
   - component: {fileID: 858041265655684784}
+  - component: {fileID: 8778328862306724253}
   m_Layer: 0
   m_Name: SM_Prop_Canopic_Jar_02
   m_TagString: Untagged
@@ -42758,7 +42858,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &4677531997589725199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42922,6 +43022,19 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &8778328862306724253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9026702512869412677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e4ae1fb7d4c8aa3796dcf21cb41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectRespawn
+  objectPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &9043358972890142084
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,19 +4,25 @@ using System.Collections;
 
 public class CatacombsInitializer : MonoBehaviour, ILevelInitializer
 {
-	[SerializeField]	private Transform			spawnPos;
+	[SerializeField]	private Transform				spawnPos;
 
 	[SerializeField]	private CatacombsStateManager	stateManagerPrefab;
 	[SerializeField]	private CatacombsStateManager	stateManagerInstance;
 
-	[SerializeField]	private CatacombsRoomManager			roomManagerPrefab;
-	[SerializeField]	private CatacombsRoomManager			roomManagerInstance;
+	[SerializeField]	private CatacombsRoomManager	roomManagerPrefab;
+	[SerializeField]	private CatacombsRoomManager	roomManagerInstance;
 
 	void Awake()
 	{
 		LevelInitializerService.current = this;
 		Exit.OnLevelFinished += QuitLevel;
 		StopWatch.OnTimerZero += QuitLevel;
+	}
+
+	void OnDestroy()
+	{
+		Exit.OnLevelFinished -= QuitLevel;
+		StopWatch.OnTimerZero -= QuitLevel;
 	}
 
 	public IEnumerator InitializeLevel()

@@ -20702,6 +20702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4d7c90394cc440a8144c41c4220bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  _playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
   spawnPos: {fileID: 3670845276910676993}
 --- !u!4 &7512040817827097661 stripped
 Transform:
