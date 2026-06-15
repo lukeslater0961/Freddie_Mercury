@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class PlatePuzzle : MonoBehaviour, IPuzzle 
 {
-	public static event Action ResetPlate;
 	public event Action OnPuzzleFailed;
 	public event Action OnCompleted;
 
@@ -55,7 +54,6 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 		
 		answers.Clear();
 		OnPuzzleFailed?.Invoke();
-		ResetPlate?.Invoke();
 	}
 
     private void Complete()

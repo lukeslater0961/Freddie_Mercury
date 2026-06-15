@@ -10,29 +10,22 @@ public class PressurePlate : MonoBehaviour
 
 	[SerializeField] private int id;
 
-	private Vector3	initialPosition;
-	private bool		isPressed = false;
 	private XRSimpleInteractable pokeInteractable;
 
 	[ContextMenu("PressPlate")]
 	public void PressPlate()
 	{	
-		if (isPressed) return;
-		isPressed = true;
 		OnPressed?.Invoke(id);
 	}
 
 	void Start()
 	{
-		isPressed = false;
 		Room3PuzzleHandler.OnAllPuzzlesCompleted += Hide;
-		PlatePuzzle.ResetPlate += ResetBool;
 	}
 
 	void OnDestroy()
 	{
 		Room3PuzzleHandler.OnAllPuzzlesCompleted -= Hide;
-		PlatePuzzle.ResetPlate -= ResetBool;
 	}
 
 	void ResetBool()
