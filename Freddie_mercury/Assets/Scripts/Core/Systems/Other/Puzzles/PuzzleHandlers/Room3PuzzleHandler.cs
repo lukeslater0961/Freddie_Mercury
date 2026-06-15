@@ -10,8 +10,9 @@ public class Room3PuzzleHandler : BasePuzzleHandler
 		Init();
 	}
 
-	private void onDisable()
+	private void OnDisable()
 	{
+		Debug.Log("puzzle 3 handler disabled");
 		WorldLimits.OnHit -= HandlePuzzleFailed;
 	}
 

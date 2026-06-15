@@ -391,10 +391,6 @@ PrefabInstance:
       value: Catacombs_Room3
       objectReference: {fileID: 0}
     - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -403,24 +399,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 330164413}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PressPlate
       objectReference: {fileID: 0}
     - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -435,16 +415,8 @@ PrefabInstance:
       value: PressPlate
       objectReference: {fileID: 0}
     - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PressurePlate, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PressurePlate, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4586106135226053172, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -453,10 +425,6 @@ PrefabInstance:
     - target: {fileID: 5445802784756301573, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.711
-      objectReference: {fileID: 0}
-    - target: {fileID: 5854230166610072915, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.1010003
       objectReference: {fileID: 0}
     - target: {fileID: 6121549502038034328, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -518,29 +486,9 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -20.169
       objectReference: {fileID: 0}
-    - target: {fileID: 8332957040991390758, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332957040991390758, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332957040991390758, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332957040991390758, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8332957040991390758, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
     - target: {fileID: 8917666008069545066, guid: 026408816ee2e4173bf52b5664470dd3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.627
+      value: 0.62700015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -560,10 +508,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 188480253512115251, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 436855340957914498, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.71
@@ -608,13 +552,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catacombs_Room2
       objectReference: {fileID: 0}
-    - target: {fileID: 4797591206377519116, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 6382728374805740100, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
       objectReference: {fileID: 0}
-    - target: {fileID: 6098052173035982282, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 247
+    - target: {fileID: 6382728374805740100, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382728374805740100, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6382728374805740100, guid: 9a9131c1492154f28b17a1f212cbfce2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.76
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -840,18 +792,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Catacombs_Room1
       objectReference: {fileID: 0}
-    - target: {fileID: 4658655210121258991, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6313110656876353156, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7694069894574483523, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8039394642483468854, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -890,26 +830,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8039394642483468854, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8072553032757651382, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8268675827181347843, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8759652635315146662, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8787338067536955376, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9026702512869412677, guid: 609a1199e209d4e209d687e67d857cba, type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

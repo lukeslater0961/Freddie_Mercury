@@ -6,7 +6,7 @@ public class RoomManager : MonoBehaviour
 	[SerializeField] protected	GameObject[] roomPrefabs;
 
 	[SerializeField]private GameObject[] roomInstances;
-	private int			 currentRoom;
+	[SerializeField] private int			 currentRoom;
 
 	void Awake(){Init();}
 

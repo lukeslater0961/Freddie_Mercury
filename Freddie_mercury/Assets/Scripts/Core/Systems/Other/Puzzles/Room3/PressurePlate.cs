@@ -26,11 +26,18 @@ public class PressurePlate : MonoBehaviour
 	{
 		isPressed = false;
 		Room3PuzzleHandler.OnAllPuzzlesCompleted += Hide;
+		PlatePuzzle.ResetPlate += ResetBool;
 	}
 
 	void OnDestroy()
 	{
 		Room3PuzzleHandler.OnAllPuzzlesCompleted -= Hide;
+		PlatePuzzle.ResetPlate -= ResetBool;
+	}
+
+	void ResetBool()
+	{
+		isPressed = false;
 	}
 
 	void Hide()

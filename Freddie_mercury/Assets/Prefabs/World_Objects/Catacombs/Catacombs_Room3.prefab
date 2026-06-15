@@ -3255,6 +3255,7 @@ Transform:
   - {fileID: 4197691570105428928}
   - {fileID: 4948916405722614938}
   - {fileID: 3670845276910676993}
+  - {fileID: 7563266404090592226}
   - {fileID: 2348195059877220366}
   - {fileID: 559204783314561070}
   - {fileID: 7213869788122610512}
@@ -3641,7 +3642,7 @@ Transform:
   m_GameObject: {fileID: 1755669844781815852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.6269998, y: 2.4320002, z: -11.042}
+  m_LocalPosition: {x: 1.947, y: 2.4320002, z: -11.042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3738,6 +3739,18 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8313883411532552110}
         m_TargetAssemblyTypeName: PressurePlate, Assembly-CSharp
@@ -3751,18 +3764,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -8047,7 +8048,7 @@ Transform:
   m_GameObject: {fileID: 3648736763975897365}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -5.825, y: 3.358, z: -17.792}
+  m_LocalPosition: {x: -5.819, y: 3.355, z: -20.169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11256,7 +11257,7 @@ Transform:
   m_GameObject: {fileID: 5487409537244962427}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 1.637, z: -14.489}
+  m_LocalPosition: {x: -1.5, y: 2.93, z: -14.489}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11873,15 +11874,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5772623727541167511}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 3.71, y: 2.432, z: -26.175}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 3.127, y: 2.43, z: -27.931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8277195627672870889}
   - {fileID: 7708285275616779623}
   m_Father: {fileID: 5293547167522411801}
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: -180}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: -180}
 --- !u!114 &107254483500432772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13147,6 +13148,76 @@ Transform:
   - {fileID: 5854230166610072915}
   m_Father: {fileID: 8332957040991390758}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6453934780817194657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7563266404090592226}
+  - component: {fileID: 2585765621803327049}
+  - component: {fileID: 5213691926455667693}
+  m_Layer: 0
+  m_Name: WorldLimit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7563266404090592226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453934780817194657}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.016419888, z: -16.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6121549502038034328}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2585765621803327049
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453934780817194657}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 0.48072264, z: 30}
+  m_Center: {x: 0, y: -0.2596387, z: 0}
+--- !u!114 &5213691926455667693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453934780817194657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4d7c90394cc440a8144c41c4220bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldLimits
+  _playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  spawnPos: {fileID: 3670845276910676993}
 --- !u!1 &6454040816580962337
 GameObject:
   m_ObjectHideFlags: 0
@@ -19824,7 +19895,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8103284401150196049, guid: bcf1c39d2823254428f1fc00c76ff403, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.76
+      value: -0.881
       objectReference: {fileID: 0}
     - target: {fileID: 8103284401150196049, guid: bcf1c39d2823254428f1fc00c76ff403, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22144,7 +22215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 140702511877289850, guid: 67fb3e41eaeaebd4187b90359bdd0496, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.88
+      value: 0.711
       objectReference: {fileID: 0}
     - target: {fileID: 140702511877289850, guid: 67fb3e41eaeaebd4187b90359bdd0496, type: 3}
       propertyPath: m_LocalPosition.y

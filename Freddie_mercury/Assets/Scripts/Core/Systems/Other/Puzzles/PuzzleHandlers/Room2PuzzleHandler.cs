@@ -8,8 +8,9 @@ public class Room2PuzzleHandler : BasePuzzleHandler
 		WrongExit.OnWrongExitTaken += HandlePuzzleFailed;
 	}
 
-	private void onDisable()
+	private void OnDisable()
 	{
+		Debug.Log("puzzle 2 handler disabled");
 		Room2Exit.OnRoomExited -= RaisePuzzlesCompleted;
 		WrongExit.OnWrongExitTaken -= HandlePuzzleFailed;
 	}

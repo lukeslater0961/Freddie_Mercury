@@ -9,8 +9,9 @@ public class Room1PuzzleHandler : BasePuzzleHandler
 		Init();
 	}
 
-	private void onDisable()
+	private void OnDisable()
 	{
+		Debug.Log("puzzle 1 handler disabled");
 		Cleanup();
 	}
 

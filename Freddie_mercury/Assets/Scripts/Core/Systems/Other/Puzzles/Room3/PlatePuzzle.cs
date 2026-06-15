@@ -1,55 +1,61 @@
 using UnityEngine;
 using System;
+using System.Collections.Generic;
 
 public class PlatePuzzle : MonoBehaviour, IPuzzle 
 {
+	public static event Action ResetPlate;
 	public event Action OnPuzzleFailed;
 	public event Action OnCompleted;
 
-	[SerializeField] private int[] answers = new int[3];
-	private int index;
+	[SerializeField] private List<int> answers = new List<int>(3);
 
 	public bool IsCompleted {get; private set;}
 
 	void Start()
 	{
-		index = 0;
 		PressurePlate.OnPressed += AddAnswer;
-		Debug.Log("answers length = " + answers.Length);
+		answers.Clear();
 	}
 
 	void OnDestroy()
 	{
 		PressurePlate.OnPressed -= AddAnswer;
+		answers = null;
 	}
 
 	public void AddAnswer(int id)
 	{
-		answers[index++] = id;
-		Debug.Log($"added {id} at index {index - 1}");
-		
-		Debug.Log($"checking index {index} compared to length {answers.Length}");
-		if (index == answers.Length)
-			CheckAnswer();
+	    if (answers.Contains(id))
+			return;
+
+		answers.Add(id);
+
+		if (answers.Count == 3)
+			CheckAnswer();	
 	}
 
 	private void CheckAnswer()
 	{
-		for (int index = 0; index < answers.Length; index++)
+		for (int i = 0; i < answers.Count; i++)
 		{
-			if (answers[index] != index)
+			if (answers[i] != i)
+			{
 				FailPuzzle();
-			else if (index == answers.Length - 1)
-				Complete();
+				return;         
+			}
 		}
+
+		Complete();
 	}
 
 	private void FailPuzzle()
 	{
 		Debug.Log("Puzzle failed, resetting answers");
 		
-		Array.Clear(answers, 0, answers.Length);
+		answers.Clear();
 		OnPuzzleFailed?.Invoke();
+		ResetPlate?.Invoke();
 	}
 
     private void Complete()
