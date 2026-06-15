@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-	[SerializeField] protected Transform[]	roomTransforms;
+	[SerializeField] protected  Transform[]	 roomTransforms;
 	[SerializeField] protected	GameObject[] roomPrefabs;
 
 	[SerializeField]private GameObject[] roomInstances;
 	private int			 currentRoom;
 
 	void Awake(){Init();}
+
+	//void Start(){Init();}
 
 	void OnDestroy()
 	{

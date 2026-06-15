@@ -18,7 +18,7 @@ public class Catacombs3State : LevelBaseState<CatacombsStateManager>
 		Room3PuzzleHandler.OnAllPuzzlesCompleted += QuitState;
 	}
 
-	void UnSubToEvents()
+	public override void UnsubToEvents()
 	{
 		Room3PuzzleHandler.OnPuzzleFailed -= ApplyPenalty;
 		Room3PuzzleHandler.OnAllPuzzlesCompleted -= QuitState;
@@ -32,7 +32,7 @@ public class Catacombs3State : LevelBaseState<CatacombsStateManager>
 	public void QuitState()
 	{
 		Debug.Log("Leaving Catacombs3");
-		UnSubToEvents();
+		UnsubToEvents();
 		_manager.RaiseRoomCompleted();
 		_manager.SwitchState(CatacombsStateManager.catacombs4State);
 	}

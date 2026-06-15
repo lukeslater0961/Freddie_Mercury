@@ -11,6 +11,8 @@ public class Catacombs4State : LevelBaseState<CatacombsStateManager>
 		_manager = manager;
 	}
 
+	public override void UnsubToEvents(){}
+
 	public void ApplyPenalty()
 	{
 		_manager.eventHandler.ApplyTimerPenalty(_manager);
@@ -21,5 +23,4 @@ public class Catacombs4State : LevelBaseState<CatacombsStateManager>
 		Debug.Log("Leaving Catacombs4");
 		_manager.RaiseRoomCompleted();
 	}
-
 }

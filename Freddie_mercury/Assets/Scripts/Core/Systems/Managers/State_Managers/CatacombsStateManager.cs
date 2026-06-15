@@ -19,14 +19,11 @@ public class CatacombsStateManager : RoomBaseStateManager
 		eventHandler = new EventHandler();
 	}
 
-	/*void OnDestroy()
+	void OnDestroy()
 	{
-		catacombsEntranceState = null;
-		catacombs1State = null;
-		catacombs2State = null;
-		catacombs3State = null;
-		catacombs4State = null;
-	}*/
+		currentState.UnsubToEvents();
+		Debug.Log("unsubing to events");
+	}
 
 	public void SwitchState(LevelBaseState<CatacombsStateManager> state)
 	{
