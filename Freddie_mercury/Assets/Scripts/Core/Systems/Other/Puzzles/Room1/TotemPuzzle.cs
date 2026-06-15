@@ -35,7 +35,7 @@ public class TotemPuzzle: MonoBehaviour, IPuzzle
 		 bool allFilled = Array.TrueForAll(slotAnswers, x => x.HasValue);
 		 if (allFilled)
 			 CheckAnswer();	
-	}//look at this again
+	}
 
 	private void CheckAnswer()
 	{

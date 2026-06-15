@@ -39,8 +39,9 @@ public class PlatePuzzle : MonoBehaviour, IPuzzle
 		{
 			if (answers[index] != index)
 				FailPuzzle();
+			else if (index == answers.Length - 1)
+				Complete();
 		}
-		Complete();
 	}
 
 	private void FailPuzzle()
